@@ -1,0 +1,34 @@
+baseURL = "/"
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+      Access-Control-Allow-Origin = "*"
+
+[build]
+  command = "hugo"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.82.0"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Cache-Control = "public, immutable, max-age=36000"
+    
+[[headers]]
+  for = "/css/*"
+    [headers.values]
+    Cache-Control = "public, immutable, max-age=31536000"
+
+[[headers]]
+  for = "/media/*"
+    [headers.values]
+    Cache-Control = "public, immutable, max-age=31536000"
+
