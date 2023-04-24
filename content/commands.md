@@ -55,14 +55,18 @@ Returns the URL at which your ready-to-export Markdown data is available.
 Returns a list of frequent user queries, and their answers. 
 
 ### /info 
-Will display information about the Streams project, and basuc usage instructions.
-
+Will display information about the Streams project, and basic usage instructions.
 
 ### /keyphrase
 Returns the three word keyphrase that acts as authentication for private Streams, exports, and the theme-editor.
 
-### /layout
-Use this to choose between the available [layouts](/#layout-gallery) for your Stream.
+### /layout 
+Follow this command with the name of a layout to set a new layout for your Stream.
+
+**Example usage:** `/layout feed`
+
+### /layouts
+Provides you with a list of [layout](/#layout-gallery) names you can choose from.
 
 ### /mydrops
 Returns a list of your last ten Drops, with their associated IDs, usually used with the /clean command.
@@ -90,9 +94,13 @@ When you create your Stream, your username is used as the title for the Stream's
 
 **Example usage:** `/title My Cool Stream`
 
-
 ### /theme 
-Lets you set a new [theme](/#theme-gallery) for your Stream.
+Follow this command with the name of a theme to set a new theme for your Stream.
+
+**Example usage:** `/theme notebook`
+
+### /themes 
+Provides you with a list of [themes](/#theme-gallery) you can choose from.
 
 ### /unprotect
 Reply to a drop with /unprotect to change it's privacy status back to public and have it show up on your public Stream again.

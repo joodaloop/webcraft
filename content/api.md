@@ -116,9 +116,9 @@ You can use the JSON to render your Stream to your own site, or create your own 
 
 ***Note:** This endpoint has a rate-limit of 20 posts per minute.*
 
-Accepts a text string to store as a new Drop. If `process_as_markdown` is set to `true`, the bot processes any markdown characters in the text to HTML. 
+Accepts a text string to store as a new Drop. The text for the new Drop should be added to a `message` entry in the request body.
 
-The `keyphrase` entry to your headers object with your keyphrase as the value. The text for the new Drop should be added to a `message` entry in the request body.
+You need to add `keyphrase` field to your headers object with your keyphrase as the value, in order to authenticate your request. 
 
 **Example POST request:**
 
@@ -131,7 +131,10 @@ fetch('https://streams.place/judah/api/post',
         message: `## This is a markdown formatted message.
         It's pretty **cool** to be able to do this, no?`,
         // This informs the bot that it should render this text as Markdown. (default: true)
-        process_as_markdown: true
+        process_as_markdown: true,
+        // This informs the bot to store this Drop as a private one. (default: false)
+        protected: false
+
     }),
     headers: {
         "Content-Type": "application/json",
@@ -154,7 +157,16 @@ fetch('https://streams.place/judah/api/post',
     });
 ```
 
+### Parameters
+If `process_as_markdown` is set to `true`, the bot processes any markdown characters in the text to HTML.
+
+If `protected` is set to `true`, the Drop will be saved as a [private](/commands#protect) Drop.
+
+
+### Success tatus
 If the request was successful, you should recieve a JSON payload with the `success` value set to `true`. If not, a value of `false` will return instead, along with a `message` value that informs you why the request failed. 
+
+Below are the error messages you might see, and explanations for what caused them:
 
 #### I. Username is not being used by any existing users.
 

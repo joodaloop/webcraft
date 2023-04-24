@@ -8,7 +8,7 @@ description: "Guide • Streams"
 
 Streams are [microblogs](#microblogging). The most important feature of a microblog is the freedom from having to add a title to your posts. You can add a short descriptive one, or you can just fire off text into the ether, the choice is yours. 
 
-To add to your Stream, you type out posts as markdown-formatted messages, and the bot renders it within a fully-searchable chronological feed at your own URL. The bot also handles editing (for upto 2 days) and deleting posts. 
+To add to your Stream, you type out posts as markdown-formatted messages, and the bot renders it within a fully-searchable chronological feed at your own URL. Each post in your Stream is called a Drop. The bot also handles editing (for up to 2 days) and deleting posts. 
 
 You could use it for anything you like, but here's some ideas to get you started. 
 
@@ -29,7 +29,7 @@ I made streams.place because I really liked the idea of Linus' [Stream](https://
 
 ### I. Create a new post in Telegram
 
-That's all you do, write a minimally-formatted post as a regular Telegram message. The bot confirms the reciept with a message that auto-deletes to prevent your DM getting too cluttered.
+That's all you do, write a minimally-formatted post as a regular Telegram message. The bot confirms the creation of a new Drop with a message that auto-deletes to prevent your DM getting too cluttered.
 ![Streams demo, Telegram view](/media/streams-demo-1.gif)
 
 
@@ -54,7 +54,7 @@ For more details, and the complete list of commands, check out the [Commands](/c
 2. Type in the **/start** command to create an account.
 3. Use the **/newusername** command to set your username.
 4. Send a message to the bot.
-5. Refresh your Stream to see it be rendered as HTML
+5. Refresh your Stream to see it be rendered as HTML.
 5. Use the **/info** and **/faq** commands to learn about additional functionality.
 
 ## Privacy
@@ -108,6 +108,29 @@ Georgia with red highlights.
 Soft pink background and highlights, Avenir.
 
 ![Screenshot of the Candy theme](/media/candy.jpg)
+
+
+
+## Layout Gallery
+
+You can, of course, mix-and-match themes and layouts. The layouts here all use the Classic theme for consistency, but they look much cooler with the other themes, if you ask me.
+
+### Classic
+Horizontal on desktop, squeezes in from there. 
+![Screenshot of the Classic layout](/media/classic.png)
+
+### Feed
+Half the width, twice the scroll.
+![Screenshot of the Feed layout](/media/feed.png)
+
+### Wall
+Pinterest-sytle bricks in a wall.
+![Screenshot of the Wall layout](/media/wall.png)
+
+### Newspaper
+Dense text, triple columns.
+![Screenshot of the Newspaper layout](/media/newspaper.png)
+
 
 
 
@@ -168,15 +191,27 @@ There are a few small details that need to be ironed out:
 
 - Editing a Drop that has an image works fine if you only change the caption text, but trying to change the media itself will not do anything at the moment.
 
-- Since Telegram limits the edit to feature only to messages that are less than 48 hours old, I'm going to have to design an **/edit** command. Sigh.
+- Since Telegram limits the edit to feature only to messages that are less than 48 hours old.
 
 - Currently, the bot only renders iframe embeds from a few specific websites, if you want to embed something that isn't on this list, let me know and I'll add it. 
 
     | Website | Allowed URLs |
 |-|-|
 | Youtube | www.youtube.com |
-| Vimeo | |
 | Spotify | open.spotify.com |
+| Vimeo | www.vimeo.com, player.vimeo.com |
+| Google | docs.google.com, drive.google.com, www.google.com |
+| Soundcloud | w.soundcloud.com |
+| DailyMotion | www.dailymotion.com, dailymotion.com|
+| Facebook | www.facebook.com, facebook.com |
+| Pinterest | www.pinterest.com |
+| Twitch | player.twitch.tv |
+| Tumblr | www.tumblr.com |
+| Instagram | www.instagram.com |
+    
+    **Note:** Twitter is unsupported because their emebeds do not use an `<iframe>`, but Javascript-based rendering.  
 
 
-*Thanks to evgenii, nvpkv, daytura, abhimanyu, cameron, gobborg, nobu, and nihal for suggestions, encouragements and critique. And to Kai for writing the first (and only) $100 cheque.*
+## Gratitude
+
+*Thanks to [evgenii](https://twitter.com/gene_minkov), [nvpkv](https://twitter.com/nvpkv), [daytura](https://twitter.com/ArchLeucoryx), [Abhimanyu](https://twitter.com/A_Bhimany_u), [Cam](https://twitter.com/Empathy2000), [gobborg](https://twitter.com/tamalefencer), [nobu](https://twitter.com/nobu_hibiki), and [Nihal](https://twitter.com/annihalated) for their excellent suggestions, encouragements and critique. And to [Kai](https://twitter.com/kaisoapbox) for writing the first (and only) $100 cheque.*
