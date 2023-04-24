@@ -1,0 +1,16 @@
+
+@media screen and (max-device-width: 720px){
+
+.main {
+  margin-top: 80px;
+  float: left;
+  width: 100%;
+   font-size: 40px !important;
+  margin-left: 5%;
+  line-height: 50px;
+  padding: 2rem 1rem;
+}
+}
+
+
+

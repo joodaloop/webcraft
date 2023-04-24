@@ -1,0 +1,16 @@
+<!-- <div class=p-image><img src="{{ .Destination }}" alt="{{.PlainText}}"><span>{{ .PlainText | markdownify | safeHTML }}</span></div> -->
+{{ $image := .Destination }}
+{{ $alt := .PlainText | safeHTML }}
+{{ $caption := "" }}
+{{ with .Title }}
+  {{ $caption = . | safeHTML }}
+{{ end }}
+
+<!-- <div class=p-image> -->
+ <img src="/photos/{{ $image }}"
+ 	  loading="lazy"
+      alt="{{ if $alt }}{{ $alt }}{{ else if $caption }}{{ $caption | markdownify | plainify }}{{ else }}&nbsp;{{ end }}">
+<!--   {{ with $caption }}
+   <span>{{ . | markdownify | safeHTML }}</span>
+  {{ end }}
+</div> -->

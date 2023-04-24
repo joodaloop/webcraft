@@ -1,0 +1,75 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "collison"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-XXXXXXXX-Y"
+sectionPagesMenu = "main"
+pluralizelisttitles = false
+
+[params]
+relativeURLs = true
+contentdir = "content"
+mobileFriendly = true
+fontFamily = "avenir next, Trebuchet MS, Helvetica"
+fontLink = ""
+themeColor = "#e30f00"
+specialColor = "darkblue"
+
+
+
+[menu]
+[[menu.pages]]
+  name = 'About'
+  url = '/pages/about'
+
+[[menu.pages]]
+  name = 'Advice'
+  url = '/pages/advice'
+
+[[menu.pages]]
+  name = 'Blog'
+  url = '/blog'
+
+[[menu.pages]]
+  name = 'Bookshelf'
+  url = '/pages/bookshelf'
+
+[[menu.pages]]
+  name = 'Culture'
+  url = '/pages/culture'
+
+[[menu.pages]]
+  name = 'Links'
+  url = '/pages/links'
+
+[[menu.pages]]
+  name = 'People'
+  url = '/pages/people'
+
+[[menu.pages]]
+  name = 'Fast'
+  url = '/pages/fast'
+
+[[menu.pages]]
+  name = 'Pollution'
+  url = '/pages/pollution'
+
+[[menu.pages]]
+  name = 'Progress'
+  url = '/pages/progress'
+
+[[menu.pages]]
+  name = 'Questions'
+  url = '/pages/questions'
+
+[[menu.pages]]
+  name = 'Work'
+  url = '/pages/work'
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+

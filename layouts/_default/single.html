@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    {{ partial "head.html" . }}
+  <body>     
+    <div class="main">
+            <nav>
+                <a href="/"> Home </a>
+                <a href="/commands"> Commands </a>
+                <a href="/faq"> FAQ </a>
+                <a href="/api"> API </a>
+            </nav>
+
+      <h1> {{ .Title | markdownify }} </h1>
+
+      {{ .Content }}
+    </div>
+
+  </body>
+
+</html>

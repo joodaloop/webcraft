@@ -1,0 +1,184 @@
+body {
+  font-size: 16px;
+  font-weight:  400;
+  background: #fefefb ;
+  color: #333;
+  line-height: 1.5em;
+  scroll-behavior: smooth;
+}
+
+html{
+  scroll-behavior: smooth !important;
+}
+
+nav a{
+  padding-right: 20px;
+}
+
+img{
+  width: 100%;
+  margin: 1rem 0rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 3px;
+}
+
+.katex-image{
+  height: 1.3rem;
+  width: auto;
+  margin: 0rem;
+  box-shadow: none;
+  padding: 0px;
+}
+
+q {
+  border-left: solid 2px red;
+  display: inline;
+}
+
+pre{
+  padding: 1.5rem;
+  margin: 1.5em 0em;
+  overflow: scroll;
+  border-radius: 4px;
+}
+
+pre.inline{
+  padding: 0.2rem;
+  margin: 0em;
+  overflow: scroll;
+  border-radius: 4px;
+}
+
+.quote {
+  padding-left: 1rem;
+  border-left: solid 2px red;
+}
+
+p > code{
+  color: red;
+}
+
+.main {
+  padding-bottom: 20px;
+  float: left;
+  width: 100%;
+  margin: 2rem 5%;
+  max-width: 600px;
+  width: 90%;
+  scroll-behavior: smooth;
+}
+ 
+ a{
+  text-decoration:  underline;
+  text-decoration-color: var(--link);
+  text-decoration-thickness:  2px;
+  color:  var(--link);
+ }
+
+a:hover{
+  color: var(--link);
+  cursor: pointer;
+
+}
+
+#menu {
+  position: fixed;
+  top: 2rem;
+  right: 20px;
+  text-align: right;
+  font-size: 14px;
+  width: 100px;  
+}
+
+#menu .title{
+  display: block;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
+}
+#menu ul {
+  list-style-type: none;
+  margin: 5px 0px;
+  padding: 0;
+   line-height: 0.8em;
+}
+
+#menu li a {
+  display: inline-block;
+  color:  var(--link);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+#menu li a:hover{
+  text-decoration: underline;
+}
+
+
+h1, h2, h3 {
+   line-height: 1.2em;
+}
+
+h1{
+  font-size: 45px;
+  margin-top: 1em;
+}
+
+h1 a{
+  text-decoration: none;
+}
+
+ h2 {
+  margin-top: 2em;
+  font-size: 35px;
+  scroll-margin-top: 2rem;
+}
+
+h3{
+  margin-bottom: 10px;
+  margin-top: 3em;
+  scroll-margin-top: 1.5rem;
+}
+
+h4{
+  margin-top: 3em;
+}
+
+table{
+  width: 100%;
+  text-align: left;
+  margin: 1.5rem 0rem;
+}
+
+td, th{
+  padding: 10px 0px;
+  padding-right: 20px;
+  vertical-align: top;
+}
+
+td > *{
+  word-break: break-word;
+  white-space: break-spaces;
+}
+
+th{
+  font-size: 1.4em;
+  padding-bottom: 20px;
+}
+
+li {
+  margin-bottom: 0.7em;
+}
+
+@media screen and (max-width: 700px) {
+
+  #menu{
+    display: none;
+    position: relative;
+    width: 90%;
+    text-align: left;
+    margin: 1rem 5% 5rem 5%;
+    font-size: 16px;
+  }
+
+}
