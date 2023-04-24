@@ -1,6 +1,6 @@
 ---
 title: 'The [streams.place](https://streams.place) API'
-description: "API - streams.place"
+description: "API • Streams"
 ---
 
 <div id="menu">

@@ -1,6 +1,6 @@
 ---
 title: 'Commands cheatsheet'
-description: "Commands - streams.place"
+description: "Commands • Streams"
 
 ---
 

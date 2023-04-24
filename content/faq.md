@@ -1,6 +1,6 @@
 ---
 title: 'The [streams.place](https://streams.place) FAQ'
-description: "FAQ - streams.place"
+description: "FAQ • Streams"
 
 ---
 

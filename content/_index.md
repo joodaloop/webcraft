@@ -1,6 +1,6 @@
 ---
 title: "Guide"
-description: "Guide - streams.place"
+description: "Guide • Streams"
 
 ---
 
