@@ -1,61 +1,27 @@
 ---
 title: "Guide"
 description: "Guide • Streams"
-
 ---
 
-## About
+This site contains details that go beyond basic usage of the Streams bot. If you've ever wanted to learn about all the bot [commands](/commands), use the fancier [markdown](#markdown) syntax, export your data, or use the simple Streams [API](/api), this is the place for it. 
 
-Streams are [microblogs](#microblogging). The most important feature of a microblog is the freedom from having to add a title to your posts. You can add a short descriptive one, or you can just fire off text into the ether, the choice is yours. 
+## Features 
 
-To add to your Stream, you type out posts as markdown-formatted messages, and the bot renders it within a fully-searchable chronological feed at your own URL. Each post in your Stream is called a Drop. The bot also handles editing (for up to 2 days) and deleting posts. 
+Non-exhaustive list of features offered by streams.place. 
 
-You could use it for anything you like, but here's some ideas to get you started. 
+| Feature | Details |
+|-|-|
+| **RSS feed** | Available at *your-url/rss* |
+| **API** | GET/POST endpoints, check the [API](/api) page. |
+| **Protected drops** | The [/protect](/commands#protect) command hides Drops to your private Stream (*your-url/keyphrase*)|
+| **Theme editor** | Use the editor at *your-url/editor/your-keyphrase* to create your own themes |
+| **Search** | By both date (syntax: year-month-day), and keyword |
+| **Export/migration** | The markdown for all your posts is available at *your-url/export/keyphrase* |
+| **Storage for images, files and audio** | As long as they are smaller than 2MB | 
+| **LaTeX** | Check out the syntax in the [Markdown](#markdown) section |
 
-- Accountability threads
-- Personal log
-- Curation
-- Daily poetry
-- Stream of thoughts
-- Worklogs
-- Reading logs
-- Collections
+**Note:** There are [/export](/commands#export), [/rss](/commands#rss), and [/editor](/commands#editor) that will provide you with links to all those pages whnever you want them.
 
-My own Stream is located at [streams.place/judah](https://streams.place), but I mostly use it for testing purposes when I'm adding a new feature.
-
-I made streams.place because I really liked the idea of Linus' [Stream](https://stream.thesephist.com/), so I built one for my [own site](https://joodaloop.com/stream). Then I wondered if other people might want one too, and how there wasn't really a great way to go about making one. The Telegram API happened to be really simple to work with, so here we are. 
-
-*A blogging platform built on a chat app...*
-
-### I. Create a new post in Telegram
-
-That's all you do, write a minimally-formatted post as a regular Telegram message. The bot confirms the creation of a new Drop with a message that auto-deletes to prevent your DM getting too cluttered.
-![Streams demo, Telegram view](/media/streams-demo-1.gif)
-
-
-### II. Stream is updated
-
-Refresh your Stream to see the new post, simple as. 
-![Streams demo, web view](/media/streams-demo-2.gif)
-
-
-### III. Edit and delete Drops, right from the chat
-
-Use the native "edit message" feature, and a simple /delete command. You can recover deleted Drops using the /recover command.
-![Streams demo, editing and deleting](/media/streams-demo-3.gif)
-
-
-For more details, and the complete list of commands, check out the [Commands](/commands) page.
-
-
-## Getting Started
-
-1. Open a new chat with [@text_stream_bot](https://t.me/text_stream_bot).
-2. Type in the **/start** command to create an account.
-3. Use the **/newusername** command to set your username.
-4. Send a message to the bot.
-5. Refresh your Stream to see it be rendered as HTML.
-5. Use the **/info** and **/faq** commands to learn about additional functionality.
 
 ## Privacy
 
@@ -68,23 +34,26 @@ The transferring of messages to my bot is handled by Telegram, with whatever sec
 If you'd like to erase all trace of your account, [let me know](mailto:judah@joodaloop.com) and I'll get my best agents on the job.
 
 
-## Features 
+## Markdown
 
-Non-exhaustive list of features offered by streams.place. 
+The original markdown spec doesn't support certain elements (highlighting and LaTeX) that I wanted Streams to have. So I've had to extend the syntax using code blocks with special inital characters.
 
-| Feature | Details |
+| Element | Markup |
 |-|-|
-| **RSS feed** | Available at *your-url/rss* |
-| **API** | GET/POST endpoints, check the [API](/api) page. |
-| **Protected drops** | Using the /protect command |
-| **Theme editor** | Use the editor at *your-url/editor/your-keyphrase* to create your own themes |
-| **Search** | By both date (syntax: year-month-day), and keyword |
-| **Export/migration** | The markdown for all your posts is available at *your-url/export/keyphrase* |
-| **Storage for images, files and audio** | As long as they are smaller than 2MB | 
-| **LaTeX** | Check out the syntax in the [Markdown](#markdown) section |
+| [a cool link]() | \[a cool link\]\(https://yourcoolurl.com\) |
+| **bold text** | \*\*bold text\*\* |
+| _italic_ | \_\_italic\_\_ |
+| <mark>highlight</mark> | \`::highlight\` or \`==highlight\` |
+| <img src="/media/katex.png" class=katex-image> | \`$ latex x_{2}\` or \`\`\`$ latex x_{2}\`\`\` |
+| `inline code` | \`inline code\` |
+| <pre class=inline> let x = "code block" </pre> | \`\`\`let x = "code block"\`\`\` |
+| ~~strikethrough~~ | \~\~strikethrough\~\~ |
+| <div class=quote> To be somebody or to do something...To be or to do? Which way will you go? </div> | > To be somebody or to do something...To be or to do? Which way will you go? |
 
 
 ## Theme Gallery
+
+Themes are the simplest level of customization, each is different combination of fonts, highlight colors, and backgrounds. You can change between themes using the [/theme](/commands#theme) command.
 
 ### Classic
 Dignified serif, plain old black & white.
@@ -113,6 +82,8 @@ Soft pink background and highlights, Avenir.
 
 ## Layout Gallery
 
+Layouts control how Drops in your Stream are laid out, think of them as the structural customization vs. the ornamental features provided by themes. 
+
 You can, of course, mix-and-match themes and layouts. The layouts here all use the Classic theme for consistency, but they look much cooler with the other themes, if you ask me.
 
 ### Classic
@@ -132,23 +103,6 @@ Dense text, triple columns.
 ![Screenshot of the Newspaper layout](/media/newspaper.png)
 
 
-
-
-## Markdown
-
-The original markdown spec doesn't support certain elements (highlighting and LaTeX) that I wanted Streams to have. So I've had to extend the syntax using code blocks with special inital characters.
-
-| Element | Markup |
-|-|-|
-| [a cool link]() | \[a cool link\]\(https://yourcoolurl.com\) |
-| **bold text** | \*\*bold text\*\* |
-| _italic_ | \_\_italic\_\_ |
-| <mark>highlight</mark> | \`::highlight\` or \`==highlight\` |
-| <img src="/media/katex.png" class=katex-image> | \`$ latex x_{2}\` or \`\`\`$ latex x_{2}\`\`\` |
-| `inline code` | \`inline code\` |
-| <pre class=inline> let x = "code block" </pre> | \`\`\`let x = "code block"\`\`\` |
-| ~~strikethrough~~ | \~\~strikethrough\~\~ |
-| <div class=quote> To be somebody or to do something...To be or to do? Which way will you go? </div> | > To be somebody or to do something...To be or to do? Which way will you go? |
 
 ## Roadmap
 
@@ -214,4 +168,4 @@ There are a few small details that need to be ironed out:
 
 ## Gratitude
 
-*Thanks to [evgenii](https://twitter.com/gene_minkov), [nvpkv](https://twitter.com/nvpkv), [daytura](https://twitter.com/ArchLeucoryx), [Abhimanyu](https://twitter.com/A_Bhimany_u), [Cam](https://twitter.com/Empathy2000), [gobborg](https://twitter.com/tamalefencer), [nobu](https://twitter.com/nobu_hibiki), and [Nihal](https://twitter.com/annihalated) for their excellent suggestions, encouragements and critique. And to [Kai](https://twitter.com/kaisoapbox) for writing the first (and only) $100 cheque.*
+*Thanks to [evgenii](https://twitter.com/gene_minkov), [nvpkv](https://twitter.com/nvpkv), [daytura](https://twitter.com/ArchLeucoryx), [Abhimanyu](https://twitter.com/A_Bhimany_u), [Cam](https://twitter.com/Empathy2000), [gobborg](https://twitter.com/tamalefencer), [nobu](https://twitter.com/nobu_hibiki), and [Nihal](https://twitter.com/annihalated) for their excellent suggestions, encouragement and critique. And to [Kai](https://twitter.com/kaisoapbox) for writing the first (and only) $100 cheque.*
