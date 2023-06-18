@@ -89,7 +89,13 @@
           letter-spacing: 0.5px;
           overflow: scroll;
           border: solid 1px var(--text);
-        }
+            -ms-overflow-style: none;  /* IE and Edge */
+             scrollbar-width: none;
+          }
+
+        #posts-display::-webkit-scrollbar {
+            display: none;
+          }
 
         #posts-display a{
           color: var(--text);

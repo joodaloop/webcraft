@@ -16,11 +16,6 @@ baseURL = "/"
   from = "/*"
   to = "/index.html"
   status = 404
-    
-[[headers]]
-  for = "/css/*"
-    [headers.values]
-    Cache-Control = "public, immutable, max-age=31536000"
 
 [[headers]]
   for = "/fonts/*"

@@ -7,6 +7,12 @@
       position: fixed;
       z-index: 2;
       background: var(--background);
+      -ms-overflow-style: none;  /* IE and Edge */
+       scrollbar-width: none;
+    }
+
+    .note-scroll::-webkit-scrollbar {
+      display: none;
     }
 
     .note-scroll-inner{
