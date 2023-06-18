@@ -1,37 +1,211 @@
 <!DOCTYPE html>
-    {{ partial "head.html" . }}
-	<body>     
-		<div class="main">
-            <nav>
-                <a href="/"> Home </a>
-                <a href="/commands"> Commands </a>
-                <a href="/faq"> FAQ </a>
-                <a href="/api"> API </a>
-                <a href="/theme-editor"> Editor </a>
-            </nav>
 
-			<h1> The official guide to <a style="color: red" href="https://streams.place">streams.place</a> </h1>
+<head>
+  {{ partial "home-styles.html" }}
+</head>
+<body>
 
-			<p> <b>Streams</b> are a <s>revolutionary approach to blogging</s> simple way to write and publish posts from a Telegram chat. </p>
+ <div class=mobile-menu> 
+    <a href="/notes"> <div class=option> NOTES </div> </a>
+    <a href="/"> <div class=option> HOME </div> </a>
+    <a href="/essays"> <div class=option> ESSAYS </div> </a>
+ </div>
+  
+<div class=holder>
 
-			<div id="menu">
-           <!-- <span class=title>Stream</span> -->
-                <ul>     
-                    <li><a href="#features"> Features </a></li>
-                    <li><a href="#privacy"> Privacy </a></li>
-                    <li><a href="#markdown"> Markdown </a></li>
-                    <li><a href="#theme-gallery"> Theme Gallery </a></li>
-                    <li><a href="#layout-gallery"> Layout Gallery </a></li>
-                    <li><a href="#roadmap"> Roadmap </a></li>
-                    <li><a href="#microblogging"> Micro-blogging </a></li>
-                    <li><a href="#furthermore"> Furthermore... </a></li>
-                    <li><a href="#gratitude"> Gratitude </a></li>
-                </ul>
+    <div class=photo> 
+      <img id=profile-img src=media/personal.jpg> 
+    </div>
+
+    <div class=tabbed>
+
+      <div class=text-holder>
+        <div class=text>
+            <div id=website class=tab-content>
+                {{ with .GetPage "/website.md" }}
+                    {{ .Content | markdownify }}
+                {{ end }}
             </div>
+            <div id=chroma class=tab-content>
+                {{ with .GetPage "/chroma.md" }}
+                    {{ .Content | markdownify }}
+                {{ end }}
+            </div>
+            <div id=personal class=tab-content>
+                {{ with .GetPage "/personal.md" }}
+                    {{ .Content | markdownify }}
+                {{ end }}
+            </div>
+        </div>
+      </div>
 
-			{{ .Content }}
-		</div>
+      <div class=tabs> 
+        <button class=tab onclick="tabTo('personal')"> Personal </button>
+        <button class=tab onclick="tabTo('chroma')"> Chroma </button>
+        <button class=tab onclick="tabTo('website')"> Website </button>
+      </div>
 
-	</body>
+    </div>
+
+
+
+    <div class=flex>
+
+        {{ range where .Site.RegularPages "Section" "essays" }}
+          {{ if .Params.featured }}
+            <div class=selected-post>
+                      <figure>
+                        <div class=wrapper> <a href="{{ .Permalink }}"> <img src="/media/essays/{{ .Params.thumbnail }}"> </a></div>
+                        <figcaption> <a href="{{ .Permalink }}">{{ .Title }}</a></figcaption>
+                      </figure>
+                </div>
+          {{ end }}
+        {{ end }}
+    </div>
+
+
+
+    <div class=second-holder>
+
+
+        <div class=note-list>
+          <table>
+            <thead> <th> id </th> <th> title </th> <th> length </th> <th> date </th></thead>
+            {{ range $index, $val := where $.Site.RegularPages "Section" "notes" }}
+                <tr>
+                    <td> {{ $index }} </td>
+                       <td> <a href="{{ .Permalink }}"> {{ .Title }} </a> </td>
+                    <td> {{ .WordCount }} </td>
+                    <td> {{.Date | time.Format ":date_short" }} 
+                </tr>
+            {{ end }}
+        </table>
+        <div class=reverse style="width:95%; text-align: right; padding: 10px 2.5%">
+            <a href="/notes" style="display: block; width:100%">See all notes --></a> </div>
+        </div>
+
+        
+        <div class=special id=special>
+            <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span class=fast>1011000101010010100100010100110100101001001001010101001001110000110101</span>
+                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span>1011000101010010100100010100110100101001001001010101001001110000110100</span>
+                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+        </div>
+
+    </div>
+
+
+
+  <div class=reading>
+     <div class="title" style="padding-bottom: 2rem;">
+            recommended reading
+        </div>
+
+    <div class=shelf>
+      <div class=shelf-title> books </div>
+        {{ range $.Site.Data.books.entries }}
+            <a href="{{ .link }}"> {{ .title }} </a>
+        {{ end }}
+    </div>
+
+    <div class=shelf>
+      <div class=shelf-title> papers </div>
+        {{ range $.Site.Data.papers.entries }}
+            <a href="{{ .link }}"> {{ .title }} </a>
+        {{ end }}
+    </div>
+
+    <div class=shelf>
+      <div class=shelf-title> blogroll </div>
+        {{ range $.Site.Data.blogroll.entries }}
+            <a href="{{ .link }}"> {{ .title }} </a>
+        {{ end }}
+    </div>
+
+    <div class=shelf>
+      <div class=shelf-title> twitter </div>
+       {{ range $.Site.Data.twitter.entries }}
+            <a href="{{ .link }}"> {{ .title }} </a>
+        {{ end }}
+    </div>
+
+  </div>
+
+
+<div class=tall> 
+    <div class="title" style="padding-bottom: 2rem;">
+        miscellaneous
+    </div>
+
+    <table>
+        <thead> <th> more stuff i recommend </th> </thead>
+        {{ range $.Site.Data.media.entries }}
+            <tr> <td> <a href="{{ .link }}"> {{ .title }} </a> </td> </tr> 
+        {{ end }}
+    </table>     
+</div>
+
+
+
+  <div class="manifesto">
+    <h2> Manifesto </h2>
+
+    <div class=three-col>
+
+        {{ with .GetPage "/manifesto.md" }}
+            {{ .Content | markdownify }}
+        {{ end }}
+
+    </div>
+  </div>
+
+</div>
+
+
+<footer> Copyright @2023 </footer>
+
+{{ partial "sidebar.html" .Page }}
+
+
+<script>
+
+  function $(id){
+      return document.getElementById(id)
+    }
+
+  let bits = $("special").children 
+  for(let ele of bits){
+    ele.addEventListener('click', () => {
+        ele.style.opacity = 0
+        setTimeout(() => {ele.style.opacity = 1}, 4000)
+    })
+  }
+
+  function tabTo(tabName){
+    for(let ele of document.getElementsByClassName("tab-content")){
+        ele.style.display = 'none'
+    }
+    $(tabName).style.display = 'inline-block'
+    $("profile-img").src = "/media/" + tabName + ".jpg"
+  }
+
+</script>
+
+</body>
 
 </html>

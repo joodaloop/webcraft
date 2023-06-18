@@ -168,4 +168,4 @@ There are a few small details that need to be ironed out:
 
 ## Gratitude
 
-*Thanks to [evgenii](https://twitter.com/gene_minkov), [nvpkv](https://twitter.com/nvpkv), [daytura](https://twitter.com/ArchLeucoryx), [Abhimanyu](https://twitter.com/A_Bhimany_u), [Cam](https://twitter.com/Empathy2000), [gobborg](https://twitter.com/tamalefencer), [nobu](https://twitter.com/nobu_hibiki), and [Nihal](https://twitter.com/annihalated) for their excellent suggestions, encouragement and critique. And to [Kai](https://twitter.com/kaisoapbox) for writing the first (and only) $100 cheque.*
+*Thanks to [evgenii](https://twitter.com/gene_minkov), [Abhimanyu](https://twitter.com/A_Bhimany_u), [nvpkv](https://twitter.com/nvpkv), [daytura](https://twitter.com/ArchLeucoryx), [Cam](https://twitter.com/Empathy2000), [gobborg](https://twitter.com/tamalefencer), [nobu](https://twitter.com/nobu_hibiki), and [Nihal](https://twitter.com/annihalated) for their excellent suggestions, encouragement and critique. And to [Kai](https://twitter.com/kaisoapbox) for writing the first (and only) $100 cheque.*

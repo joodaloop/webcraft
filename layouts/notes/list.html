@@ -1,0 +1,50 @@
+<html>
+<head>
+  <link rel="stylesheet" href=/css/style.css>
+  <link rel="stylesheet" href=/css/notes.css>
+  <link rel="stylesheet" href=/css/sidebar.css>
+</head>
+
+<body>
+
+  <div class=mobile-menu> 
+    <a href="/notes"> <div class=option> NOTES </div> </a>
+    <a href="/"> <div class=option> HOME </div> </a>
+    <a href="/essays"> <div class=option> ESSAYS </div> </a>
+  </div>
+
+  <main>
+
+    <div class=title-bar> <h1 id="notes"> NOTES </h1> </div>
+
+
+    <div style="height: 2em; width: fit-content; white-space: pre; fit-content; transform: rotate3d(0, 0, 1, -90deg) translateX(50%) translateY(-250%); position: fixed; bottom: 0.5em; left: 0em"> 
+      notes ><span id=note-title> note name </span>
+      <!-- > <span id=progress-%> 90% </span>  -->
+    </div>
+
+    <article id="article">
+
+      {{ range where $.Site.RegularPages "Section" "notes" }}
+        <div class=note-preview-holder>
+           <div class=note-preview data-title="{{ .Title }}"> 
+            <a href="{{ .Permalink }}" class=note-preview-title> {{ .Title }} </a>
+            {{ .Content }}
+           </div> 
+            <div class=see-more-button> <a style="width: 100%; display: block" href="{{ .Permalink }}"> {{ .WordCount }}w</a> </div>
+        </div>
+
+        {{ end }}
+
+    </article>
+  </main>
+  
+
+  </div>
+
+  {{ partial "sidebar.html" .Site }}
+
+</body>
+</html>
+
+   

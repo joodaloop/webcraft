@@ -1,0 +1,161 @@
+    .note-preview-holder{
+      width: 31%;
+      margin: 2% 0px;
+      display: inline-block;
+      opacity: 0.8;
+      position: relative;
+      vertical-align: top;
+    }
+
+    .note-preview{
+      height: 20rem;
+      box-sizing: border-box;
+      overflow: scroll;
+      border: solid 1rem var(--background);
+      outline: solid 4px var(--text);
+      outline-offset: -4px;
+      font-size: 12px;
+      line-height: 1.5em;
+    }
+
+    .note-preview-holder:hover{
+      opacity: 1;
+    }
+
+    .see-more-button{
+      background: var(--text);
+      padding: 0.3rem 1rem;
+      color: var(--background);
+      border: solid 4px var(--text);
+    }
+
+    .note-preview-title{
+      font-weight: 800;
+/*      font-variant: small-caps;*/
+      margin: 0px 0px 1rem 0px;
+      display: inline-block;
+      font-size: 1.5em;
+      line-height: 1.4em;
+      background: none;
+    }
+
+    .note-preview a{
+      opacity: 1;
+      text-decoration: none;
+      background: none;
+    }
+
+    .note-preview h2{
+      font-size: 1.25em;
+      line-height: 1.4em;
+      margin: 1.5em 0px 1em 0px;
+    }
+
+    .note-preview h3{
+      font-size: 1.1em;
+      margin: 1em 0px 0.5em 0px;
+    }
+
+    .note-preview-title:hover{
+      text-decoration: underline;
+      transition: none;
+      background: transparent;
+    }
+
+    .see-more-button a{
+      background: transparent;
+      opacity: 1;
+    }
+
+    .see-more-button a:hover{
+      background: transparent;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+   /* main{
+      width: calc(100% - 21rem);
+      position: relative;
+      color: var(--text);
+      font-family: IBM;
+      -webkit-font-smoothing: antialiased;
+      padding: 3rem;
+    }*/
+
+    main{
+/*      display: none;*/
+        color: var(--text);
+        font-weight: 400;
+        position: relative;
+    }
+
+    article{
+      padding: 2rem 3rem;
+      box-sizing: border-box;
+      text-align: left;
+      max-width: calc(100% - 21rem);
+      font-size: 19px;
+      line-height: 1.5em;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    p{
+      margin: 1.5em 0px;
+    }
+
+    a{
+      color: inherit;
+      text-decoration-color: var(--text);
+      text-underline-offset: 2px;
+      text-decoration-thickness: 1px;
+    }
+
+    @media screen and (max-width: 1100px) {
+
+                .sidebar{
+                    display: none;
+                }
+
+                main{
+                    width: 100%;
+                }
+
+                article{
+                  max-width: 100%;
+                  padding: 3rem 5%;
+                }
+
+                .note-scroll{
+                  width: 100%;
+                }
+            }
+
+    @media screen and (max-width: 800px) {
+
+                article{
+                  max-width: 100%;
+                  padding: 4rem 10%;
+                }
+
+                .note-scroll{
+                  width: 100%;
+                }
+
+                .status{
+                  display: none;
+                }
+
+                .note-preview-holder{
+                  width: 100%;
+                  margin: 0px 0px 4rem 0px;
+                }
+
+                .note-preview{
+                  height: 30rem;
+                }
+            }
+            
+

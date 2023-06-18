@@ -1,20 +1,120 @@
-<!DOCTYPE html>
-    {{ partial "head.html" . }}
-  <body>     
-    <div class="main">
-            <nav>
-                <a href="/"> Home </a>
-                <a href="/commands"> Commands </a>
-                <a href="/faq"> FAQ </a>
-                <a href="/api"> API </a>
-                <a href="/theme-editor"> Editor </a>
-            </nav>
+<html>
+<head>
+  <link rel="stylesheet" href=/css/style.css>
+  <link rel="stylesheet" href=/css/sidebar.css>
 
-      <h1> {{ .Title | markdownify }} </h1>
+  <style>
 
-      {{ .Content }}
+      .title-bar{
+        padding-left: 10rem;
+      }
+
+      @media screen and (max-width: 1100px) {
+
+                  .sidebar{
+                      display: none;
+                  }
+
+                  main{
+                      width: 100%;
+                  }
+
+                  article{
+                    max-width: 100%;
+                    padding: 2rem 8rem;
+                  }
+
+                  .title-bar{
+                    padding-left: 8rem;
+                  }
+              }
+
+      @media screen and (max-width: 800px) {
+
+                  article{
+                    max-width: 100%;
+                    padding: 2rem 5%;
+                  }
+
+                  .progress{
+                    display: none;
+                  }
+
+                  .title-bar{
+                    padding: 0px 5%;
+                  }
+
+                  h1{
+                    font-size: 1.6rem;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+
+                  }
+              }
+  </style>
+</head>
+
+<body>
+
+  <div class=mobile-menu> 
+    <a href="/notes"> <div class=option> NOTES </div> </a>
+    <a href="/"> <div class=option> HOME </div> </a>
+    <a href="/essays"> <div class=option> ESSAYS </div> </a>
+  </div>
+
+  <main>
+
+    <div class=title-bar> <h1 id="{{ .Title }}">{{ .Title }}</h1> </div>
+
+    <div class=progress> 
+        <div class=progress-inside></div>
     </div>
 
-  </body>
+    <article id="article">
 
+      {{ .Content }}
+
+    </article>
+  </main>
+  
+
+  </div>
+
+   {{ partial "sidebar.html" .Site }}
+
+
+  <script>
+
+    let body = document.body,
+        html = document.documentElement;
+
+    let height = Math.max(
+            body.scrollHeight,
+            body.offsetHeight,
+            html.clientHeight,
+            html.scrollHeight,
+            html.offsetHeight
+        );
+
+    const updateProgress = () => {
+
+      let docElem = document.documentElement, 
+      docBody = document.body,
+      scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
+      scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
+      scrollPercent = scrollTop / scrollBottom * 100 + '%';
+      document.querySelector(".progress-inside").style.height = scrollPercent
+      // $("scroller").value = scrollTop / scrollBottom * 1000
+    };
+
+    setInterval( () => {
+       updateProgress()
+    }, 100)
+
+  </script>
+
+</body>
 </html>
+
+   

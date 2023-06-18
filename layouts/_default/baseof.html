@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html>
-{{ partial "head.html" . }}
-    <body>    {{ partial "menu.html" . }}  
-<div id="left">&nbsp;</div>
-        <div class="main">
+    <body>    
         {{- block "main" . }}
         {{- end }}
-        </div>
-        
     </body>
 </html>
