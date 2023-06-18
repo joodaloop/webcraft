@@ -37,7 +37,6 @@
 
     .note-preview-title{
       font-weight: 800;
-/*      font-variant: small-caps;*/
       margin: 0px 0px 1rem 0px;
       display: inline-block;
       font-size: 1.5em;
@@ -52,9 +51,10 @@
     }
 
     .note-preview h2{
-      font-size: 1.25em;
+      font-size: 1.2em;
       line-height: 1.4em;
       margin: 1.5em 0px 1em 0px;
+      font-weight: 800;
     }
 
     .note-preview h3{
@@ -78,15 +78,6 @@
       text-decoration: underline;
       text-underline-offset: 4px;
     }
-
-   /* main{
-      width: calc(100% - 21rem);
-      position: relative;
-      color: var(--text);
-      font-family: IBM;
-      -webkit-font-smoothing: antialiased;
-      padding: 3rem;
-    }*/
 
     main{
 /*      display: none;*/

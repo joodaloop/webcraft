@@ -25,7 +25,6 @@
 
     .essay-preview-holder img{
       filter: sepia(100%) saturate(150%) brightness(100%);
-      height: 16rem;
     }
 
     .see-more-button a{
