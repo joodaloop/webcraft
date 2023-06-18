@@ -66,6 +66,12 @@
         return document.getElementById(id)
       }
 
+    let light = localStorage.getItem("light") ?? false
+    if (light == "true"){ 
+        switchMode() 
+        $("mode").checked = true
+    }
+
     var mrefreshinterval = 500; // update display every 500ms
     var lastmousex=-1; 
     var lastmousey=-1;
@@ -105,6 +111,8 @@
       var r = document.querySelector(':root');
       r.style.setProperty('--background', modeObject[mode][0]);
       r.style.setProperty('--text', modeObject[mode][1]);
+
+      localStorage.setItem("light", !!mode)
     }
 
       let posts = {{ $essays | jsonify }};

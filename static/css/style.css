@@ -228,6 +228,7 @@
       height: fit-content;
       display: none;
       font-size: 0px;
+      line-height: 0px;
     }
 
     .option{
@@ -235,7 +236,8 @@
       background: var(--text);
       width: 33.33%;
       display: inline-block;
-      padding: 1rem;
+      padding: 1.5em;
+      font-size: 18px;
       box-sizing: border-box;
       text-align: center;
       border: solid 1px var(--background);
