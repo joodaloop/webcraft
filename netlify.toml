@@ -6,7 +6,7 @@ baseURL = "/"
       Access-Control-Allow-Origin = "*"
 
 [build]
-  command = "hugo"
+  command = "hugo --minify"
   publish = "public"
 
 [build.environment]
@@ -31,4 +31,5 @@ baseURL = "/"
   for = "/media/*"
     [headers.values]
     Cache-Control = "public, immutable, max-age=31536000"
+
 

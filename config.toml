@@ -1,15 +1,15 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "collison"
-# Enter your tracking code to enable Google Analytics
-googleAnalytics = "UA-XXXXXXXX-Y"
-sectionPagesMenu = "main"
+title = "ANTON"
 pluralizelisttitles = false
 
 [params]
 relativeURLs = true
 contentdir = "content"
 
+[minify]
+  minifyOutput = true
+  
   
 [markup]
   defaultMarkdownHandler = "goldmark"
