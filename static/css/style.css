@@ -108,7 +108,7 @@
       line-height: 1.7em;
     }
 
-    article a{
+    p a{
       background: rgba(245, 158, 0, 0.4);
       opacity: 0.7;
       transition: all ease 0.4s;
@@ -249,6 +249,10 @@
           display: block;
           position: sticky;
           top: 0;
+        }
+
+        .title-bar{
+          opacity: 1; 
         }
     }
 

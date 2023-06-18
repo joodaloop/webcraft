@@ -16,6 +16,12 @@
       outline-offset: -4px;
       font-size: 12px;
       line-height: 1.5em;
+       -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+    }
+
+    .note-preview::-webkit-scrollbar {
+      display: none;
     }
 
     .note-preview-holder:hover{

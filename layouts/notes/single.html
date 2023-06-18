@@ -1,17 +1,6 @@
-<html>
-<head>
-  <link rel="stylesheet" href=/css/style.css>
-  <link rel="stylesheet" href=/css/note.css>
-  <link rel="stylesheet" href=/css/sidebar.css>
-  <title> {{ .Title }} </title>
-</head>
+{{ define "main" }}
 
-<body>
-  <div class=mobile-menu> 
-    <a href="/notes"> <div class=option> NOTES </div> </a>
-    <a href="/"> <div class=option> HOME </div> </a>
-    <a href="/essays"> <div class=option> ESSAYS </div> </a>
-  </div>
+  <link rel="stylesheet" href=/css/note.css>
   
   {{ $currentURL := .Permalink }}
   <main>
@@ -32,19 +21,11 @@
       <a href="/notes"><b> notes </b></a> > <span id=note-title> {{ .Title }}</span> > <span id=progress-% style="font-weight: 200;"> 90% </span> 
     </div>
 
-    <!-- <div class=progress> 
-        <div class=progress-inside></div>
-    </div> -->
-
     <article id="article">
       {{ .Content }}
     </article>
+
   </main>
-  
-
-  </div>
-
-  {{ partial "sidebar.html" .Site }}
 
   <script>
 
@@ -78,10 +59,7 @@
     }, 100)
 
 
-
   </script>
 
-</body>
-</html>
-
+{{ end }}
    

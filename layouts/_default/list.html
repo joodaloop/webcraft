@@ -1,18 +1,6 @@
-<html>
-<head>
-  <link rel="stylesheet" href=/css/style.css>
-  <link rel="stylesheet" href=/css/sidebar.css>
-  <link rel="stylesheet" href=/css/essays.css>
-  <title> Essays </title>
-</head>
+{{ define "main" }}
 
-<body>
-
-  <div class=mobile-menu> 
-    <a href="/notes"> <div class=option> NOTES </div> </a>
-    <a href="/"> <div class=option> HOME </div> </a>
-    <a href="/essays"> <div class=option> ESSAYS </div> </a>
-  </div>
+<link rel="stylesheet" href=/css/essays.css>
 
   <main>
 
@@ -21,7 +9,7 @@
     <article>
       {{ range where $.Site.RegularPages "Section" "essays" }}
           <div class=essay-preview-holder>
-              <img src="/media/essays/{{ .Params.thumbnail }}">              
+              <a href="{{ .Permalink }}"><img src="/media/essays/{{ .Params.thumbnail }}"></a>
               <div class=see-more-button> <a style="width: 100%; display: block" href="{{ .Permalink }}">  {{ .Title }} </a> </div>
         </div>
           
@@ -33,9 +21,6 @@
 
   </div>
 
-  {{ partial "sidebar.html" .Site }}
-
-</body>
-</html>
+{{ end }}
 
    

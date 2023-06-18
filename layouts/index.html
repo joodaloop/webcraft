@@ -1,9 +1,33 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-  {{ partial "home-styles.html" }}
-  <title> ANTON </title>
+    <title> Anton </title>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180"  href="/media/card.jpg"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/card.jpg"> 
+    <link rel="icon" type="image/png" sizes="16x16"  href="/media/card.jpg"> 
+
+      <!-- Facebook Open Graph tags -->
+    <meta property="og:url" content="https://troynikov.io.com" />
+    <meta property="og:title" content="Anton" />
+    <meta property="og:description" content="The most cyberpunk site you've ever seen." />
+    <meta property="og:image" content="https://troynikov.io/media/card.jpg" />
+
+    <!-- Twitter Card (large image card) tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@atroyn">
+    <meta name="twitter:title" content="Anton">
+    <meta name="twitter:description" content="The most cyberpunk site you've ever seen." />
+    <meta name="twitter:image" content="https://troynikov.io/media/card.jpg" />
+
+    <meta name="description" content="{{ .Description }}">
+
+    {{ partial "home-styles.html" }}
 </head>
+
 <body>
 
  <div class=mobile-menu> 

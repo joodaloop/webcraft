@@ -1,7 +1,17 @@
 <!DOCTYPE html>
-<html>
-    <body>    
+<html lang="en">
+    <head>
+        {{ partial "head.html" }}
+    </head>
+    <body>   
+    <div class=mobile-menu> 
+        <a href="/notes"> <div class=option> NOTES </div> </a>
+        <a href="/"> <div class=option> HOME </div> </a>
+        <a href="/essays"> <div class=option> ESSAYS </div> </a>
+      </div> 
         {{- block "main" . }}
         {{- end }}
+
+        {{ partial "sidebar.html" .Site }}
     </body>
 </html>

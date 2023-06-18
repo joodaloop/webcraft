@@ -21,8 +21,7 @@
     }
 
     .essay-preview-holder img{
-    	height: 16rem;
-        filter: sepia(100%) saturate(150%) brightness(100%);
+      filter: sepia(100%) saturate(150%) brightness(100%);
     }
 
     .see-more-button a{
