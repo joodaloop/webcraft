@@ -40,8 +40,8 @@
 
     th{
         font-variant: small-caps;
-        font-size: 22px;
-        padding: 5px 20px 10px 20px;
+        font-size: 1.2em;
+        padding: 10px 20px 12px 20px;
         color: var(--background);
         background: var(--text);
     }
@@ -53,7 +53,7 @@
     td{
         border: solid 0.5px var(--text);
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: inherit;
     }
 
     .smaller-table td{

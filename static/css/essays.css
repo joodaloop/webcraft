@@ -7,6 +7,7 @@
       position: relative;
       vertical-align: top;
       outline: solid 4px var(--text);
+      line-height: 0px;
     }
 
     .essay-preview-holder:hover{
@@ -18,10 +19,13 @@
       padding: 1rem 1rem 0.5rem 1rem;
       color: var(--background);
       border: solid 4px var(--text);
+      margin: 0px;
+      line-height: 1.4em;
     }
 
     .essay-preview-holder img{
       filter: sepia(100%) saturate(150%) brightness(100%);
+      height: 16rem;
     }
 
     .see-more-button a{

@@ -49,17 +49,6 @@
         position: relative;
     }
 
-    article{
-      padding: 8rem 10rem;
-      display: inline-block;
-      box-sizing: border-box;
-      text-align: left;
-      max-width: calc(100% - 21rem);
-      font-size: 18px;
-      line-height: 1.5em;
-      position: relative;
-    }
-
     p{
       margin: 1.5em 0px;
     }
@@ -74,6 +63,18 @@
     h1{
       font-size: 3rem;
       line-height: 1.4em;
+    }
+
+    article{
+      padding: 6rem 8rem;
+      display: block;
+      box-sizing: border-box;
+      text-align: left;
+      max-width: calc(100% - 21rem);
+      font-size: 18px;
+      line-height: 1.5em;
+      position: relative;
+      text-align: center;
     }
 
     @media screen and (max-width: 1100px) {
