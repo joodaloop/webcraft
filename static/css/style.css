@@ -227,6 +227,7 @@
       left: 0;
       height: fit-content;
       display: none;
+      font-size: 0px;
     }
 
     .option{
