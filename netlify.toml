@@ -23,6 +23,11 @@ baseURL = "/"
     Cache-Control = "public, immutable, max-age=31536000"
 
 [[headers]]
+  for = "/fonts/*"
+    [headers.values]
+    Cache-Control = "public, immutable, max-age=31536000"
+
+[[headers]]
   for = "/media/*"
     [headers.values]
     Cache-Control = "public, immutable, max-age=31536000"

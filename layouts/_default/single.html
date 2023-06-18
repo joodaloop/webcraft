@@ -67,9 +67,7 @@
 
     <div class=title-bar> <h1 id="{{ .Title }}">{{ .Title }}</h1> </div>
 
-    <div class=progress> 
-        <div class=progress-inside></div>
-    </div>
+    <div class=progress><div class=progress-inside></div></div>
 
     <article id="article">
 
@@ -103,7 +101,7 @@
       docBody = document.body,
       scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
       scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
-      scrollPercent = scrollTop / scrollBottom * 100 + '%';
+      scrollPercent = scrollTop / scrollBottom * 100.1 + '%';
       document.querySelector(".progress-inside").style.height = scrollPercent
       // $("scroller").value = scrollTop / scrollBottom * 1000
     };
