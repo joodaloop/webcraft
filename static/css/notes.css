@@ -39,7 +39,7 @@
       font-weight: 800;
       margin: 0px 0px 1rem 0px;
       display: inline-block;
-      font-size: 1.5em;
+      font-size: 1.6em;
       line-height: 1.4em;
       background: none;
     }
@@ -152,6 +152,7 @@
 
                 .note-preview{
                   height: 30rem;
+                  font-size: 14px;
                 }
             }
             
