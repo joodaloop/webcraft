@@ -9,7 +9,7 @@
     <article>
       {{ range where $.Site.RegularPages "Section" "essays" }}
           <div class=essay-preview-holder>
-              <a href="{{ .Permalink }}"><img src="/media/essays/{{ .Params.thumbnail }}"></a>
+              <a href="{{ .Permalink }}"><img src="/media/essays/{{ .Params.thumbnail }}" alt="{{ .Title }}"></a>
               <div class=see-more-button> <a style="width: 100%; display: block" href="{{ .Permalink }}">  {{ .Title }} </a> </div>
         </div>
           

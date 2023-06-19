@@ -39,7 +39,7 @@
 <div class=holder>
 
     <div class=photo> 
-      <img id=profile-img src=media/personal.jpg> 
+      <img id=profile-img src=media/personal.jpg alt="Anton Troynikov"> 
     </div>
 
     <div class=tabbed>
@@ -80,7 +80,7 @@
           {{ if .Params.featured }}
             <div class=selected-post>
                       <figure>
-                        <div class=wrapper> <a href="{{ .Permalink }}"> <img src="/media/essays/{{ .Params.thumbnail }}"> </a></div>
+                        <div class=wrapper> <a href="{{ .Permalink }}"> <img alt="{{ .Title }}" src="/media/essays/{{ .Params.thumbnail }}"> </a></div>
                         <figcaption> <a href="{{ .Permalink }}">{{ .Title }}</a></figcaption>
                       </figure>
                 </div>
