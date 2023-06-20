@@ -88,6 +88,19 @@
       animation: glow 0.5s infinite alternate;
     }
 
+    .velocity-holder{
+      border: var(--border); 
+      text-align: center; 
+      display: inline-block; 
+      width: calc(27%); 
+      vertical-align: top; 
+      color: var(--background); 
+      background: var(--text); 
+      height: 100%; 
+      padding: 1.9rem 20px;
+      box-sizing: border-box;
+    }
+
     p{
       margin: 0em 0em 1.5em 0px;
     }
@@ -391,6 +404,7 @@
 
     .smaller-table td{
         padding: 5px 15px;
+        box-sizing: border-box;
     }
 
         button{
@@ -421,7 +435,13 @@
 /*          box-shadow: inset 0px 0px 15px var(--background);*/
           letter-spacing: 0.5px;
           overflow: scroll;
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;
           border: solid 1px var(--text);
+        }
+
+        .text::-webkit-scrollbar {
+          display: none;
         }
 
         #posts-display a{

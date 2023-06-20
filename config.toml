@@ -6,6 +6,7 @@ pluralizelisttitles = false
 [params]
 relativeURLs = true
 contentdir = "content"
+subscriptionLink = "https://mailchimp.com/your-email-capture-link"
 
 [minify]
   minifyOutput = true
