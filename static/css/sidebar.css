@@ -105,7 +105,7 @@
           font-size: 12px;
 /*          box-shadow: inset 0px 0px 15px var(--background);*/
           letter-spacing: 0.5px;
-          overflow: scroll;
+          overflow: auto;
           border: solid 1px var(--text);
           -ms-overflow-style: none;  /* IE and Edge */
           scrollbar-width: none;
