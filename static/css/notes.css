@@ -10,7 +10,7 @@
     .note-preview{
       height: 20rem;
       box-sizing: border-box;
-      overflow: scroll;
+      overflow: auto;
       border: solid 1rem var(--background);
       outline: solid 4px var(--text);
       outline-offset: -4px;

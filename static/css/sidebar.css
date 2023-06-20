@@ -37,7 +37,7 @@
     }
 
     .scrollable{
-      overflow: scroll;
+      overflow: auto;
       height: calc(100% - 12rem);
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;
