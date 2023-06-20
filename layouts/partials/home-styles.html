@@ -104,6 +104,12 @@
     .scrollable{
       overflow: scroll;
       height: calc(100% - 12rem);
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;
+    }
+
+    .scrollable::-webkit-scrollbar {
+          display: none;
     }
 
     p{
