@@ -27,13 +27,18 @@
       border: var(--border); 
       text-align: center; 
       display: inline-block; 
-      width: calc(27%); 
+      width: calc(29.5%); 
       vertical-align: top; 
       color: var(--background); 
       background: var(--text); 
       height: 100%; 
       padding: 1.9rem 20px;
       box-sizing: border-box;
+    }
+
+    .scrollable{
+      overflow: scroll;
+      height: calc(100% - 12rem);
     }
 
    table{
@@ -102,8 +107,8 @@
           letter-spacing: 0.5px;
           overflow: scroll;
           border: solid 1px var(--text);
-            -ms-overflow-style: none;  /* IE and Edge */
-             scrollbar-width: none;
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;
           }
 
         #posts-display::-webkit-scrollbar {
@@ -233,6 +238,7 @@
           color: var(--text);
           font-weight: 800;
           margin: 0rem 1.5rem;
+          padding-bottom: 4rem;
         }
 
         .subtitle{
