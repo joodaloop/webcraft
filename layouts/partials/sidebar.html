@@ -41,10 +41,10 @@
 
     <div class=bottom>
         <div class=coords>
-          <table style="width: 70%; font-weight: 200; display: inline-table;" class=smaller-table> 
-            <tr> <td> x </td> <td id=x> 0 </td> </tr>
+          <table style="width: 70%; font-weight: 200; display: inline-table; table-layout: fixed" class=smaller-table> 
+            <tr> <td width="50%"> x </td> <td id=x> 0 </td> </tr>
             <tr> <td> y </td> <td id=y> 0 </td> </tr>
-            <tr> <td style="background: var(--text); color: var(--background);" id=clock> 0000000000 </td> <td id=time> 12:00 </td> </tr>
+            <tr> <td style=" font-size: 0.9em; background: var(--text); color: var(--background);" id=clock> 0000000000 </td> <td id=time> 12:00 </td> </tr>
           </table>
           <div class=velocity-holder> 
             <div id=velocity>1.02</div> px/ms 
@@ -79,7 +79,6 @@
         $("mode").checked = true
     }
 
-    var mrefreshinterval = 500; // update display every 500ms
     var lastmousex=-1; 
     var lastmousey=-1;
     var lastmousetime;
@@ -101,9 +100,8 @@
     setInterval( () => {
       let d = new Date()
       let h = d.getHours(), m = d.getMinutes(), s = d.getSeconds()
-      $("clock").innerHTML = d.getTime()
-      $("time").innerHTML = + h + ":" + m
-      // $("clock").innerHTML = d.getTime() + " - " + h + ":" + m + ":" + s
+      $("clock").innerHTML = d.getTime() 
+      $("time").innerHTML = + h + ":" + m 
     }, 200)
 
     setInterval( () => {

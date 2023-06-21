@@ -11,17 +11,17 @@
     <link rel="icon" type="image/png" sizes="16x16"  href="/media/card.jpg"> 
 
       <!-- Facebook Open Graph tags -->
-    <meta property="og:url" content="https://troynikov.io.com" />
+    <meta property="og:url" content="{{ .Site.BaseURL }}" />
     <meta property="og:title" content="Anton" />
-    <meta property="og:description" content="The most cyberpunk site you've ever seen." />
-    <meta property="og:image" content="https://troynikov.io/media/card.jpg" />
+    <meta property="og:description" content="{{ .Description }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}media/card.jpg" />
 
     <!-- Twitter Card (large image card) tags -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@atroyn">
     <meta name="twitter:title" content="Anton">
-    <meta name="twitter:description" content="The most cyberpunk site you've ever seen." />
-    <meta name="twitter:image" content="https://troynikov.io/media/card.jpg" />
+    <meta name="twitter:description" content="{{ .Description }}" />
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}media/card.jpg" />
 
     <meta name="description" content="{{ .Description }}">
 
@@ -80,7 +80,7 @@
           {{ if .Params.featured }}
             <div class=selected-post>
                       <figure>
-                        <div class=wrapper> <a href="{{ .Permalink }}"> <img alt="{{ .Title }}" src="/media/essays/{{ .Params.thumbnail }}"> </a></div>
+                        <div class=wrapper> <a target="_blank" href="{{ .Permalink }}"> <img alt="{{ .Title }}" src="/media/essays/{{ .Params.thumbnail }}"> </a></div>
                         <figcaption> <a href="{{ .Permalink }}">{{ .Title }}</a></figcaption>
                       </figure>
                 </div>
@@ -144,28 +144,28 @@
     <div class=shelf>
       <div class=shelf-title> books </div>
         {{ range $.Site.Data.books.entries }}
-            <a href="{{ .link }}"> {{ .title }} </a>
+            <a target="_blank" href="{{ .link }}"> {{ .title }} </a>
         {{ end }}
     </div>
 
     <div class=shelf>
       <div class=shelf-title> papers </div>
         {{ range $.Site.Data.papers.entries }}
-            <a href="{{ .link }}"> {{ .title }} </a>
+            <a target="_blank" href="{{ .link }}"> {{ .title }} </a>
         {{ end }}
     </div>
 
     <div class=shelf>
       <div class=shelf-title> blogroll </div>
         {{ range $.Site.Data.blogroll.entries }}
-            <a href="{{ .link }}"> {{ .title }} </a>
+            <a target="_blank" href="{{ .link }}"> {{ .title }} </a>
         {{ end }}
     </div>
 
     <div class=shelf>
       <div class=shelf-title> twitter </div>
        {{ range $.Site.Data.twitter.entries }}
-            <a href="{{ .link }}"> {{ .title }} </a>
+            <a target="_blank" href="{{ .link }}"> {{ .title }} </a>
         {{ end }}
     </div>
 
@@ -180,7 +180,7 @@
     <table>
         <thead> <th> more stuff i recommend </th> </thead>
         {{ range $.Site.Data.media.entries }}
-            <tr> <td> <a href="{{ .link }}"> {{ .title }} </a> </td> </tr> 
+            <tr> <td> <a target="_blank" href="{{ .link }}"> {{ .title }} </a> </td> </tr> 
         {{ end }}
     </table>     
 </div>
@@ -202,7 +202,11 @@
 </div>
 
 
-<footer> Copyright @2023 </footer>
+<footer> Copyright @2023 
+    <div class=footer-right> 
+        <a target="_blank" href="/index.xml"> Follow the RSS feed </a> 
+    </div>
+</footer>
 
 {{ partial "sidebar.html" .Page }}
 

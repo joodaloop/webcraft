@@ -81,8 +81,11 @@
     }
 
     .smaller-table td{
-        padding: 5px 15px;
-    }
+            padding: 5px 15px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
 
         button{
           background: var(--text);
@@ -141,13 +144,7 @@
           padding: 6px 5px;
           width: calc(33.3%);
         }
-
-        .clock{
-            width: 100%;
-            text-align: center;
-            padding: 1em 0em;
-        }
-
+        
         .bottom{
             position: absolute;
             bottom: 0px;

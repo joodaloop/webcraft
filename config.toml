@@ -1,7 +1,6 @@
-baseurl = "/"
-languageCode = "en-us"
 title = "ANTON"
-pluralizelisttitles = false
+baseURL = "https://troynikov.io/"
+languageCode = "en-us"
 
 [params]
 relativeURLs = true

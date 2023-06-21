@@ -415,7 +415,9 @@
 
     .smaller-table td{
         padding: 5px 15px;
-        box-sizing: border-box;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
 
         button{
@@ -613,10 +615,14 @@
         }
 
         footer{
-            width: calc(100% - 4rem);
+            width: calc(100% - 25rem);
             padding: 1rem 2rem;
             background: rgba(245, 158, 0, 0.5);
             margin-top: 1rem;
+        }
+
+        .footer-right{
+            float: right; 
         }
 
         .flex{
@@ -684,6 +690,10 @@
 
             .second-holder{
                 margin: 0px;
+            }
+
+            footer{
+                width: calc(100% - 4rem);
             }
         }
 
