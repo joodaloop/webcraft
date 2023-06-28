@@ -86,7 +86,7 @@
         .portfolio{
             width: 120%;
             margin-left: -10%;
-            margin-top: 2rem;
+            margin-top: 0rem;
             column-count: 2;
             column-gap: 2.5%;
         }
@@ -189,7 +189,7 @@
             font-style: normal;
         }
 
-        @media screen and (max-width: 700px){
+        @media screen and (max-width: 900px){
             .portfolio{
                 width: 100%;
                 margin-left: 0%;
@@ -197,6 +197,18 @@
 
             .toc{
                 display: none;
+            }
+        }
+
+        @media screen and (max-width: 600px){
+
+            .portfolio{
+                    column-count: 1;
+                    margin-top: 0rem;
+                }
+
+            .broad{
+                margin: 2% 0rem;
             }
         }
 
