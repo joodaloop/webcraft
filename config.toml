@@ -1,10 +1,9 @@
-title = "ANTON"
+title = "Webcraft - Judah"
 languageCode = "en-us"
 
 [params]
 relativeURLs = true
 contentdir = "content"
-subscriptionLink = "https://mailchimp.com/your-email-capture-link"
 
 [minify]
   minifyOutput = true
