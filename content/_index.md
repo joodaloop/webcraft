@@ -1,6 +1,6 @@
 ---
 title: "Webcraft"
-description: "By Judah"
+description: "Designing the best personal websites on the internet."
 ---
 
 **I design and develop the best personal websites money can buy.**

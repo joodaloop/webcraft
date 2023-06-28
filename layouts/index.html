@@ -31,7 +31,8 @@
             margin: 0.5rem 0rem;
             line-height: 1.3em;
             text-align: center;
-            font-weight: 200;
+            font-weight: 100;
+            font-variant: small-caps;
         }
 
         h2{
@@ -50,10 +51,10 @@
         .subtitle{
             font-weight: 200;
             font-family: Inter, system-ui;
-            font-size: 1.2rem;
+            font-size: 1rem;
             width: 100%;
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 4.5rem;
             letter-spacing: -0.5px;
         }
 
@@ -147,14 +148,14 @@
         }
 
         blockquote{
-            font-family: Iowan Old Style, times;
+            font-family: Iowan Old Style, serif;
             font-style: italic;
             font-size: 18px;
             margin: 3rem 3rem 4rem 3rem;
             color: #555;
         }
 
-        blockquote a{
+        .subtitle a, blockquote a{
             text-decoration: none;
         }
 
@@ -204,8 +205,8 @@
 
 <body>
     <main>
-        <h1> Webcraft</h1>
-        <div class=subtitle> by Judah </div>
+        <h1> webcraft</h1>
+        <div class=subtitle> by <a href="https://joodaloop.com"> Judah </a></div>
 
         {{ .Content }}
 
