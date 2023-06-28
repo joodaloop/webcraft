@@ -1,240 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> Anton Troynikov</title>
-    <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    {{ partial "head.html" . }}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180"  href="/media/card.jpg"> 
-    <link rel="icon" type="image/png" sizes="32x32" href="/media/card.jpg"> 
-    <link rel="icon" type="image/png" sizes="16x16"  href="/media/card.jpg"> 
+    <style>
 
-      <!-- Facebook Open Graph tags -->
-    <meta property="og:url" content="https://troynikov.io" />
-    <meta property="og:title" content="Anton" />
-    <meta property="og:description" content="{{ .Description }}" />
-    <meta property="og:image" content="https://troynikov.io/media/card.jpg" />
+        @font-face {
+              font-family: 'Inter';
+              font-style: normal;
+              src: url('/fonts/Inter.woff2') format("woff2");
+              font-display: swap;
+              font-weight: 1 999;  
+            }
 
-    <!-- Twitter Card (large image card) tags -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="@atroyn">
-    <meta name="twitter:title" content="Anton">
-    <meta name="twitter:description" content="{{ .Description }}" />
-    <meta name="twitter:image" content="https://troynikov.io/media/card.jpg" />
+        html{
+            scroll-behavior: smooth;
+        }
 
-    <meta name="description" content="{{ .Description }}">
+        body{
+            padding: 5rem 0%;
+            font-family: Inter, system-ui, Helvetica Neue;
+            text-align: center;
+            background: #fff;
+            color: #444;
+        }
 
-    {{ partial "home-styles.html" }}
+        h1{
+/*            font-family: Iowan Old Style;*/
+            font-size: 3rem;
+            margin: 0.5rem 0rem;
+            line-height: 1.3em;
+            text-align: center;
+            font-weight: 200;
+        }
+
+        h2{
+            line-height: 1.3em;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 6rem 0rem 2rem 0rem;
+            font-weight: 900;
+            scroll-margin: 2rem;
+        }
+
+        p{
+            margin: 1.5rem 0rem;
+        }
+
+        .subtitle{
+            font-weight: 200;
+            font-family: Inter, system-ui;
+            font-size: 1.2rem;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 4rem;
+            letter-spacing: -0.5px;
+        }
+
+        .grid-2{
+            display: flex;
+            column-gap: 4rem;
+            padding: 4rem 0rem;
+            column-count: 2;
+            flex-wrap: wrap;
+            flex-basis: e;
+        }
+
+        .grid-2 .grid-entry{
+            width: 50%;
+            line-height: 1.5em;
+            display: inline-block;
+        }
+
+        main{
+            max-width: 38rem;
+            width: 90%;
+            line-height: 1.44em;
+            display: inline-block;
+            text-align: left;
+            font-size: 16.5px;
+            position: relative;
+        }
+
+        .portfolio{
+            width: 120%;
+            margin-left: -10%;
+            margin-top: 2rem;
+            column-count: 2;
+            column-gap: 2.5%;
+        }
+
+        .broad{
+            width: 100%;
+            margin: 2.5%;
+            display: inline-block;
+            box-shadow: 0px 0px 5px #aaa;
+            line-height: 0px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0px;
+            border-radius: 5px;
+            transition: all ease 0.3s;
+        }
+
+        a{
+            color: inherit;
+            text-decoration-thickness: 1.5px;
+            text-underline-offset: 2px;
+            text-decoration-style: dotted;
+        }
+
+        a:hover{
+            text-decoration-thickness: 2px;
+            font-style: italic;
+        }
+
+        a:hover img{
+            box-shadow: 0px 0px 5px #bbb;
+/*            transform: scale(1.005);*/
+        }
+
+        em{
+            font-weight: 300;
+        }
+
+        .sidenote-right{
+            display: inline;
+            position: absolute;
+            width: 15rem;
+            font-size: 14px;
+            line-height: 1.5em;
+            font-style: italic;
+            font-weight: 200;
+            font-family: Palatino, serif;
+            margin-left: 105%;
+            padding-top: 0.5rem;
+        }
+
+        ol, li{
+            margin: 1.5rem 0rem;
+        }
+
+        blockquote{
+            font-family: Iowan Old Style, times;
+            font-style: italic;
+            font-size: 18px;
+            margin: 3rem 3rem 4rem 3rem;
+            color: #555;
+        }
+
+        blockquote a{
+            text-decoration: none;
+        }
+
+        blockquote a:hover{
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+            text-decoration-style: dotted;
+        }
+
+        sup{
+            font-size: 10px;
+        }
+
+        .toc{
+            position: fixed;
+            top: 40vh;
+            left: 2rem;
+        }
+
+        .toc a{
+            text-decoration: none;
+            font-weight: 200;
+            display: block;
+            margin: 0.4em 0rem;
+            color: #666;
+        }
+
+        .toc a:hover{
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        @media screen and (max-width: 700px){
+            .portfolio{
+                width: 100%;
+                margin-left: 0%;
+            }
+
+            .toc{
+                display: none;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
+    <main>
+        <h1> Webcraft</h1>
+        <div class=subtitle> by Judah </div>
 
- <div class=mobile-menu> 
-    <a href="/notes"> <div class=option> NOTES </div> </a>
-    <a href="/"> <div class=option> HOME </div> </a>
-    <a href="/essays"> <div class=option> ESSAYS </div> </a>
- </div>
-  
-<div class=holder>
+        {{ .Content }}
 
-    <div class=photo> 
-      <img id=profile-img src=media/personal.jpg alt="Anton Troynikov"> 
-    </div>
-
-    <div class=tabbed>
-
-      <div class=text-holder>
-        <div class=text>
-            <div id=website class=tab-content>
-                {{ with .GetPage "/website.md" }}
-                    {{ .Content | markdownify }}
-                {{ end }}
-            </div>
-            <div id=chroma class=tab-content>
-                {{ with .GetPage "/chroma.md" }}
-                    {{ .Content | markdownify }}
-                {{ end }}
-            </div>
-            <div id=personal class=tab-content>
-                {{ with .GetPage "/personal.md" }}
-                    {{ .Content | markdownify }}
-                {{ end }}
-            </div>
-        </div>
-      </div>
-
-      <div class=tabs> 
-        <button class=tab onclick="tabTo('personal')"> Personal </button>
-        <button class=tab onclick="tabTo('chroma')"> Chroma </button>
-        <button class=tab onclick="tabTo('website')"> Website </button>
-      </div>
-
-    </div>
+        <div class=toc>
+            <a href="#the-problem">The Problem</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#the-process"> Process</a>
+            <a href="#the-product"> Product</a>
+            <a href="#postscript"> Postscript</a>
 
 
-
-    <div class=flex>
-
-        {{ range where .Site.RegularPages "Section" "essays" }}
-          {{ if .Params.featured }}
-            <div class=selected-post>
-                      <figure>
-                        <div class=wrapper> <a target="_blank" href="{{ .Permalink }}"> <img alt="{{ .Title }}" src="/media/essays/{{ .Params.thumbnail }}"> </a></div>
-                        <figcaption> <a href="{{ .Permalink }}">{{ .Title }}</a></figcaption>
-                      </figure>
-                </div>
-          {{ end }}
-        {{ end }}
-    </div>
-
-
-
-    <div class=second-holder>
-
-
-        <div class=note-list>
-          <table>
-            <thead> <th> id </th> <th> title </th> <th> length </th> <th> date </th></thead>
-            {{ range $index, $val := where $.Site.RegularPages "Section" "notes" }}
-                <tr>
-                    <td> {{ $index }} </td>
-                       <td> <a href="{{ .Permalink }}"> {{ .Title }} </a> </td>
-                    <td> {{ .WordCount }} </td>
-                    <td> {{.Date | time.Format ":date_short" }} 
-                </tr>
-            {{ end }}
-        </table>
-        <div class=reverse style="width:95%; text-align: right; padding: 10px 2.5%">
-            <a href="/notes" style="display: block; width:100%">See all notes --></a> </div>
         </div>
 
-        
-        <div class=special id=special>
-            <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span class=fast>1011000101010010100100010100110100101001001001010101001001110000110101</span>
-                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span>1011000101010010100100010100110100101001001001010101001001110000110100</span>
-                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span class=fast>1101100010101001010010001010011010010100100100101010100100111000011010</span>
-                <span>1101100010101001010010001010011010010100100100101010100100111000011010</span>
+    </main>
+<!-- 
+<main>
+    <div class=title-holder>
+        <h1> I design and develop the best personal websites you've ever seen. </h1>
+        <span class=subtitle> I also do other stuff, like typographical audits and . </span>
+    </div>
+
+    <div class=grid-2>
+        <div class=grid-entry>
+            <h3> Typography </h3>
+            <p> Arranging text on a screen is </p>
         </div>
-
-    </div>
-
-
-
-  <div class=reading>
-     <div class="title" style="padding-bottom: 2rem;">
-            recommended reading
+        <div class=grid-entry>
+            <h3> Information Architecture </h3>
+            <p> Blogs are easy, all they have is blogposts. But that is far from being the only format that the web makes possible.  </p>
         </div>
-
-    <div class=shelf>
-      <div class=shelf-title> books </div>
-        {{ range $.Site.Data.books.entries }}
-            <a target="_blank" href="{{ .link }}"> {{ .title }} </a>
-        {{ end }}
+        <div class=grid-entry>
+            <h3> Best practices </h3>
+            <p> Semantic HTML, responsiveness, perfect 100s on Lighthouse tests, progressive enhancement. There are better and worse ways to build for the web, and I do my best to stick to the former.  </p>
+        </div>
+        <div class=grid-entry>
+            <h3> Desire-shaping </h3>
+            <p> <i>What do I even want from a personal website?</i> is a question that is surprisingly rare. Even when they do ask it, most people aren't aware of the possibilities that are open to them. I don't blame them, the majority of the web is a bland   </p>
+        </div>
     </div>
-
-    <div class=shelf>
-      <div class=shelf-title> papers </div>
-        {{ range $.Site.Data.papers.entries }}
-            <a target="_blank" href="{{ .link }}"> {{ .title }} </a>
-        {{ end }}
-    </div>
-
-    <div class=shelf>
-      <div class=shelf-title> blogroll </div>
-        {{ range $.Site.Data.blogroll.entries }}
-            <a target="_blank" href="{{ .link }}"> {{ .title }} </a>
-        {{ end }}
-    </div>
-
-    <div class=shelf>
-      <div class=shelf-title> twitter </div>
-       {{ range $.Site.Data.twitter.entries }}
-            <a target="_blank" href="{{ .link }}"> {{ .title }} </a>
-        {{ end }}
-    </div>
-
-  </div>
-
-
-<div class=tall> 
-    <div class="title" style="padding-bottom: 2rem;">
-        miscellaneous
-    </div>
-
-    <table>
-        <thead> <th> more stuff i recommend </th> </thead>
-        {{ range $.Site.Data.media.entries }}
-            <tr> <td> <a target="_blank" href="{{ .link }}"> {{ .title }} </a> </td> </tr> 
-        {{ end }}
-    </table>     
-</div>
-
-
-
-  <div class="manifesto">
-    <h2> Manifesto </h2>
-
-    <div class=three-col>
-
-        {{ with .GetPage "/manifesto.md" }}
-            {{ .Content | markdownify }}
-        {{ end }}
-
-    </div>
-  </div>
-
-</div>
-
-
-<footer> Copyright @2023 
-    <div class=footer-right> 
-        <a target="_blank" href="/index.xml"> Follow the RSS feed </a> 
-    </div>
-</footer>
-
-{{ partial "sidebar.html" .Page }}
-
-
-<script>
-
-  function $(id){
-      return document.getElementById(id)
-    }
-
-  let bits = $("special").children 
-  for(let ele of bits){
-    ele.addEventListener('click', () => {
-        ele.style.opacity = 0
-        setTimeout(() => {ele.style.opacity = 1}, 4000)
-    })
-  }
-
-  function tabTo(tabName){
-    for(let ele of document.getElementsByClassName("tab-content")){
-        ele.style.display = 'none'
-    }
-    $(tabName).style.display = 'inline-block'
-    $("profile-img").src = "/media/" + tabName + ".jpg"
-  }
-
-</script>
-
+</main>
+ -->
 </body>
 
 </html>
