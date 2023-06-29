@@ -88,25 +88,44 @@
             margin-left: -10%;
             margin-top: 0rem;
             column-count: 2;
-            column-gap: 2.5%;
+            column-gap: 5%;
         }
 
         .broad{
             width: 100%;
-            margin: 2.5%;
+            margin: 1.6%;
             display: inline-block;
-            box-shadow: 0px 0px 5px #aaa;
             line-height: 0px;
             box-sizing: border-box;
             border-radius: 5px;
         }
 
+        figcaption{
+            font-size: 11px;
+            line-height: 1.5em;
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #666;
+
+        }
+
+      /*  .broad:hover .last{
+            position: absolute;
+        }
+
+        .broad:hover figcaption{
+            height: fit-content;
+            margin-bottom: 0.75rem;
+        }
+*/
         img{
             width: 100%;
             height: auto;
             margin: 0px;
+            margin-bottom: 10px;
             border-radius: 5px;
-            transition: all ease 0.3s;
+            transition: all ease 0s;
+            box-shadow: 0px 0px 5px #aaa;
         }
 
         a{
@@ -122,7 +141,7 @@
         }
 
         a:hover img{
-            box-shadow: 0px 0px 5px #bbb;
+            box-shadow: 0px 0px 3px #bbb;
 /*            transform: scale(1.005);*/
         }
 
@@ -209,6 +228,16 @@
 
             .broad{
                 margin: 3% 0rem;
+            }
+
+            figcaption{
+                font-size: 13px;
+                line-height: 1.5em;
+                font-style: italic;
+                overflow: hidden;
+                height: fit-content;
+                margin-bottom: 0.75rem;
+
             }
         }
 

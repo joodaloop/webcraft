@@ -5,11 +5,11 @@ description: "Designing the best personal websites on the internet."
 
 **I design and develop the best personal websites money can buy.**
 
-The kind of website that gets [shared](https://twitter.com/freeshreeda/status/1668389564799504386) and [talked about](https://twitter.com/ungatedcreative/status/1668442076407644161) just for how cool it's design is. 
+The kind of website that gets [shared](https://twitter.com/freeshreeda/status/1668389564799504386) and [talked about](https://twitter.com/ungatedcreative/status/1668442076407644161) just for how cool its design is. 
 
-If this is the sort of thing you're interested in creating, you can [hire me](https://twitter.com/joodaloop). You might also want to hire me for some of the [other things](#postscript) I can do with websites. 
+If this is the sort of thing you're interested in creating, you can hire me. Let me know on Twitter ([@joodaloop](https://twitter.com/joodaloop)) or by email (judah@joodaloop.com). You can also hire me for some of the [other things](#postscript) I can do with websites. 
 
-Chances are, you're coming to this page having seen [my work](#the-portfolio) before, and with a particular project in mind. In which case, you could probably skip straight to the [Process](#the-process) section to read about what working with me is like. 
+Chances are, you're coming to this page having seen [my work](#the-portfolio) before, and with a particular project in mind. In which case, you could skip straight to the [Process](#the-process) section to read about what working with me is like. 
 
 _The rest of this page is an attempt to convince you of my skill, and explain why you should want a well-crafted personal site in the first place._
 
@@ -29,51 +29,54 @@ This is your website, you can choose what parts of you to show off, and how to d
 
 **You shouldn't have to fit yourself into a pre-existing theme.**
 
-Not when you can do all of the above, and in your own way. You can build a [synthesizer](https://brandnewbox.com/inthestacks/) into a webpage, it's completely legal and not that hard to pull off. You can even have your site be a retro desktop GUI. That's pretty [common](https://github.com/syxanash/syxanash.github.io/blob/development/src/resources/remote-desktops.json), actually. You can have a page with weather, that switches it's theme according to the current temperature in your city. Let the Writers<sup>TM</sup> have their Substacks, you don't have to be tied to their bland UI if you'd rather have	 something better. 
+Not when you can do all of the above, and in your own way. You can build a [synthesizer](https://brandnewbox.com/inthestacks/) into a webpage, it's completely legal and not that hard to pull off. You can even have your site be a retro desktop GUI. That's pretty [common](https://github.com/syxanash/syxanash.github.io/blob/development/src/resources/remote-desktops.json), actually. You can have a page with weather, that switches its theme according to the current temperature in your city. Let the Writers<sup>TM</sup> have their Substacks, you don't have to be tied to their bland UI if you'd rather have	 something better. 
 
 A website could be a [commonplace notebook](https://piperhaywood.com/). It could look like an [entire app](https://brianlovin.com/). It might have cool algorithm-generated art on the home page. It might even be a [playable game](https://nateparrott.com/). Even a minimal blog can feel extremely [personal](https://manuelmoreale.com/). But in each of these cases...
 
 **…the people who built them are people who are good at making sites.** 
 
-They’ve been designing, writing code, and thinking about websites for years, decades even. T*hey know what they want, and what’s possible.* They spent months fiddling with their sites, bringing them closer to their imagined ideal, to a state that fills visitors with a sense of delighted admiration.
+They’ve been designing, writing code, and thinking about websites for years, decades even. *They know what they want, and what’s possible.* They spent months fiddling with their sites, bringing them closer to their imagined ideal, to a state that fills visitors with a sense of delighted admiration.
 
 *Meanwhile, the rest of the world has to make do with yet another free template, or some kind of variation of a paid one.*
 
 **Or do they?**
 
+*I don't think so.* I work with people to get a sense of their aesthetic and preferences, and then design sites that they wouldn't be able to dream up on their own. I've worked with descriptions like "Whole Earth Catalogue", "[LaTeX paper](https://twitter.com/joodaloop/status/1654565087439380480)" and "teenage engineering", and produced some of my best sites. I believe this is a repeatable process.
 
 ## the portfolio
-
-I don't think so. 
-
-I think I can work with people to get a sense of their aesthetic and preferences, and then design sites that they would not be able to dream up on their own. I've worked with descriptions like "Whole Earth Catalogue", "[LaTeX paper](https://twitter.com/joodaloop/status/1654565087439380480)" and "teenage engineering", and produced some of my best sites. I think this is a repeatable process.
-
-**Here's what it's produced so far:**
 
 <div class=portfolio>
             <figure class=broad>
                 <a href="https://atroyn.netlify.app"> <img src=/media/anton-2.jpg> </a>
+            <figcaption> Cyberpunk, teenage engineering, physical not touchscreen, buttons, utilitarian, chunky, robust, clear." </figcaption>
             </figure>
             <figure class=broad>
                 <a href="https://atroyn.netlify.app"> <img style="filter: brightness(106%)" src=/media/anton-1.jpg> </a>
+                <figcaption> Light mode for Anton's site. </figcaption>
             </figure>
             <figure class=broad>
-                <a href="https://pradyu.netlfiy.app"> <img src=/media/pradyu-1.jpg> </a>
+                <a href="https://pradyu.netlify.app"> <img src=/media/pradyu-1.jpg> </a>
+                <figcaption> "LaTeX, dense, structure, research paper, type, detailed." </figcaption>
             </figure>
             <figure class=broad>
                 <a href="https://joodaloop.com"> <img src=/media/joodaloop-2.jpg> </a>
+                <figcaption> Current design for my personal site. </figcaption>
             </figure>
              <figure class=broad>
                 <a href="https://shreedasegan.com"> <img src=/media/shreeda-1.jpg> </a>
+                <figcaption> "Whole earth catalog, field notes, journal, writerly, typewriter, modern, newspaper, editorial, minimalist-ish, earth, neutral, and jewel tones… christopher alexander" </figcaption>
             </figure>
             <figure class=broad>
                <a href="https://v1.joodaloop.com"> <img src=/media/joodaloop-4.jpg> </a>
+                <figcaption> v1 of my personal site, had snowflakes, three columns, and a hidden dark mode feature. </figcaption>
             </figure>
             <figure class=broad>
                <a href="https://gapat.io"> <img src=/media/gapat-1.jpg> </a>
+                <figcaption> Super-minimal theme for Ashish. </figcaption>
             </figure>
             <figure class=broad>
                <a href="https://shreedasegan.com"> <img src=/media/shreeda-2.jpg> </a>
+                <figcaption class=last> Bookshelf for Shreeda's site. </figcaption>
             </figure>
         </div>	
 
@@ -83,7 +86,7 @@ I think I can work with people to get a sense of their aesthetic and preferences
 
 **STEP II:** I go away for a few days to think things over, asking you a few questions while I do it. Then I come back with three (or more) rough, distinct design directions you can choose from. These will probably include layout sketches, and a list of feature ideas. 
 
-**STEP III:** If you're sufficiently excited by the ideas I put forward, we finalise the key design choices and features and I go build the whole thing on the platform you prefer. This usually takes around a week if I'm not too busy.
+**STEP III:** If you're sufficiently excited by the ideas I put forward, we finalise the key design choices and features and I go build the whole thing on the platform you prefer. This usually takes a week if I'm not too busy.
 
 <br>
 
@@ -119,7 +122,7 @@ At the moment, there are some things that I do really well, which makes me suite
 
 **Desire-shaping + raw ideas:** If you don't know what's possible on the web, I'm happy to do that part for you. It's around 70% of the value that I do provide. You give me broad descriptions and preferences, I supply the ideas and/or give shape to yours.
 
-**Speed + quality:** I consider them to be near-synonymous. I beleive that a 99/100 PageSpeed score is a bare minimum, and work on getting it [even better](https://twitter.com/joodaloop/status/1655923954790416392?s=20). I polish corners and debug layouts across devices more obsessively than I should. 
+**Speed + quality:** I consider them to be near-synonymous. I believe that a 99/100 PageSpeed score is a bare minimum, and work on getting it [even better](https://twitter.com/joodaloop/status/1655923954790416392?s=20). I polish corners and debug layouts across devices more obsessively than I should. 
 
 I like when sites are usable on mid-market devices, and follow the ideas of progressive enhancement whenever I can. 
 
