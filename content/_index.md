@@ -59,6 +59,14 @@ They’ve been designing, writing code, and thinking about websites for years, d
                 <figcaption> "LaTeX, dense, structure, research paper, type, detailed." </figcaption>
             </figure>
             <figure class=broad>
+                <a href="https://streams.netlify.app"> 
+                    <video autoplay muted>
+                        <source src="/media/streams.mp4" type="video/mp4">
+                    </video>
+                </a>
+                <figcaption> "Home page for <b>streams.place</b>, a micro-blogging platform." </figcaption>
+            </figure>
+            <figure class=broad>
                 <a href="https://joodaloop.com"> <img src=/media/joodaloop-2.jpg> </a>
                 <figcaption> Current design for my personal site. </figcaption>
             </figure>
