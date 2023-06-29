@@ -7,7 +7,7 @@ description: "Designing the best personal websites on the internet."
 
 The kind of website that gets [shared](https://twitter.com/freeshreeda/status/1668389564799504386) and [talked about](https://twitter.com/ungatedcreative/status/1668442076407644161) just for how cool its design is. 
 
-If this is the sort of thing you're interested in creating, you can hire me. Let me know on Twitter ([@joodaloop](https://twitter.com/joodaloop)) or by email (judah@joodaloop.com). You can also hire me for some of the [other things](#postscript) I can do with websites. 
+If this is the sort of thing you're interested in creating, you can hire me. Let me know on Twitter ([@joodaloop](https://twitter.com/joodaloop)) or by email (judah.private@gmail.com). You can also hire me for some of the [other things](#postscript) I can do with websites. 
 
 Chances are, you're coming to this page having seen [my work](#the-portfolio) before, and with a particular project in mind. In which case, you could skip straight to the [Process](#the-process) section to read about what working with me is like. 
 
