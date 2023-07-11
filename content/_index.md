@@ -167,7 +167,7 @@ I like when sites are usable on mid-market devices, and follow the ideas of prog
     <p>We must build it! We must put forth this wonder into the world. I have convinced myself. Though I still don't yet know where to begin.</p></a>
 </blockquote>
 
-**Things I care about:** Typography, delightful minimalism, semantic HTML, information architecture, performance, progressive enhancement, sublime details, . 
+**Things I care about:** Typography, delightful minimalism, semantic HTML, information architecture, performance, progressive enhancement, sublime details. 
 
 <!-- 
 
