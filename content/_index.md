@@ -5,7 +5,7 @@ description: "Designing the best personal websites on the internet."
 
 **I design and develop the best personal websites money can buy.**
 
-The kind of website that gets <a target="_blank" href="https://twitter.com/freeshreeda/status/1668389564799504386">shared</a> and talked about just for how cool it looks. 
+The kind of website that gets [shared](https://twitter.com/freeshreeda/status/1668389564799504386) and talked about just for how cool it looks. 
 
 If this is the sort of thing you're interested in creating, you can hire me. Let me know on [Twitter](https://twitter.com/joodalooped) or email (webcraft@joodaloop.com). 
 
@@ -23,21 +23,23 @@ I'm also open to other kinds of design work, including typography audits, creati
 
 ## the problem
 
-*The web is full of mediocre websites.* The most popular kind of templates out there are tired variations of the same landing page, Linktree profiles, and blog themes. There's nothing *wrong* with these templates, they're useful, always in demand, and often provided for free. 
+You want a really cool website. I'm assuming that's your primary goal. You want it to be nice to look at, great to read, make visitors whistle in appreciation, etc. etc. 
 
 If you want to get a bunch of words onto the internet as cheaply as possible, there's never been more ways to go about it. Most blogging platforms will cost you less than $5/month, Tumblr and Twitter are free. 
 
+*Unfortunately, the web is full of mediocre websites.* The most popular kind of templates out there are tired variations of the same landing page, Linktree profiles, and blog themes. There's nothing *wrong* with these templates, they're useful, always in demand, and often provided for free. 
 
-**But a personal website is not a blog.**
+
+**You want a personal website that is not just a blog.**
 
 Sure, it might include a chronological list of posts, but it ought to be more. It ought to have personality. 
 
 This is your website, you can choose what parts of you to show off, and how to display them. You might just want to make a list of things you love, and have that be your home on the web. You might want to build a [timeline of your life](https://colly.com/). You might want a music collection in the form of a magazine. You can have a page with weather, that switches its theme according to the current temperature in your city.
 
 
-**You shouldn't have to fit yourself into a pre-existing theme.**
+**You don't want to fit yourself into a pre-existing theme.**
 
-Not when you can do so much more, and in your own way. Let the Writers<sup>TM</sup> have their Substacks, you don't have to be tied to their bland UI if you'd rather have something better. 
+That's pretty lame. Not when you can do so much more, and in your own way. Let the Writers<sup>TM</sup> have their Substacks, you don't have to be tied to their bland UI if you'd rather have something better. 
 
 > [My favorite aspect of websites is their duality: they’re both subject and object at once. In other words, a website creator becomes both author and architect simultaneously. There are endless possibilities as to what a website could be. What kind of room is a website? Or is a website more like a house? A boat? A cloud? A garden? A puddle? Whatever it is, there’s potential for a self-reflexive feedback loop: when you put energy into a website, in turn the website helps form your own identity.](https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/)
 
@@ -47,10 +49,9 @@ A website could be a [commonplace notebook](https://piperhaywood.com/). It could
 
 They’ve been designing, writing code, and thinking about websites for years, decades even. *They know what they want, and what’s possible.* They spent months fiddling with their sites, bringing them closer to their imagined ideal, to a state that fills visitors with a sense of delighted admiration.
 
+There's no way you could something that cool built. You've almost resigned to making do with yet another free template, or some kind of variation of a paid one.
 
-*Meanwhile, the rest of the world has to make do with yet another free template, or some kind of variation of a paid one.*
-
-**Or do they?**
+**But you don't have to.**
 
 *I don't think so.* I work with people to get a sense of their aesthetic and preferences, and then design sites that they wouldn't be able to dream up on their own. I've worked with descriptions like "Whole Earth Catalogue", "[LaTeX paper](https://twitter.com/joodaloop/status/1654565087439380480)" and "teenage engineering", and produced some of my best sites. I believe this is a repeatable process. Your website can be as good as the best in the world.
 
@@ -132,18 +133,18 @@ The second big factor is the platform you want the site to be built for. I have 
 | Single-page site | $500+ |
 | Static site (Hugo, Eleventy) | $1500+ |
 | Ghost | $2000+ |
-| Wordpress | $2500+ |
+| Wordpress | $3000+ |
 
 These are only base prices, it's still possible for say, a single-page site with high complexity to cost as much as a really simple static site. For example, [Anton's Hugo site](https://anton.netlify.app) cost much less (~$2000) than it would have if he had wanted a Wordpress theme (upwards of $4000).
 
 Finally, the level of urgency might affect the price too. If you have a tight deadline, I'm willing to prioritise your project over any ones that are in progress, but it will cost you 10-20% more to skip the line. 
 
-**Summary:** Fixed price for **step II** ($250), custom quote for **step III**, future changes and maintanance at $50/hour.
+**Summary:** Fixed price for **step II** ($250), custom quote for **step III**, future changes and maintenance at $50/hour.
 
 <!-- 
 At the moment, there are some things that I do really well, which makes me suited to particular kinds of design work. Here’s a quick summary of the main skills.
 
-**Typograghy:** I am singularly obsessed with the art of arranging type on screens, perhaps infamously so. Most sane people do not care about the difference between ` line-height: 1.44em ` and ` line-height: 1.45em ` , but this is the kind of thing that keeps me up at night. 
+**Typography:** I am singularly obsessed with the art of arranging type on screens, perhaps infamously so. Most sane people do not care about the difference between ` line-height: 1.44em ` and ` line-height: 1.45em ` , but this is the kind of thing that keeps me up at night. 
 
 **Semantic HTML:** There are a 142 different tags in the official list of HTML elements. Each of them has an intended purpose, and offers specific, useful functionality. Again, many people might not know that the `details` element exists, let alone what it’s meant to be used for, but I think it's worth caring about.
 
