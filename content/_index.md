@@ -25,10 +25,6 @@ I'm also open to other kinds of design work, including typography audits, creati
 
 You want a really cool website. I'm assuming that's your primary goal. You want it to be nice to look at, great to read, make visitors whistle in appreciation, etc. etc. 
 
-But everything you've seen so far wasn't made for you/
-
-Maybe you've been avoiding updating anything on your site for a really long time because you just weren't happy with how it looked.
-
 If you want to get a bunch of words onto the internet as cheaply as possible, there's never been more ways to go about it. Most blogging platforms will cost you less than $5/month, Tumblr and Twitter are free. 
 
 *Unfortunately, the web is full of mediocre websites.* The most popular kind of templates out there are tired variations of the same landing page, Linktree profiles, and blog themes. There's nothing *wrong* with these templates, they're useful, always in demand, and often provided for free. 
@@ -102,7 +98,7 @@ There's no way you could something that cool built. You've almost resigned to ma
                <a href="https://shreedasegan.com"> <img src=/media/shreeda-2.jpg> </a>
                 <figcaption class=last> Bookshelf for Shreeda's site. </figcaption>
             </figure>
-        </div>	
+        </div>  
 
 ## the process
 
@@ -183,5 +179,4 @@ I also do quick **re-skins** of existing themes. Send me a theme you’re using/
 One of my current projects involves designing a Hugo theme to put **books on the web**. So if you're looking for a way to publish long-form writing that goes beyond regular blog posts, I'd probably love to work with you. 
 
 In general, if your project is attempting a **novel approach** to displaying information on the web, I'm likely to be interested. -->
-
 
