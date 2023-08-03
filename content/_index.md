@@ -13,7 +13,7 @@ Chances are, you're coming to this page having seen [my work](#the-portfolio) be
 
 I enjoy working with people who want to build a real home for themselves on the web; more than just a simple blog. It also helps if you have a variety of content to work with. Layout ideas, sketches, and assorted blueprints are more than welcome as inputs to the process.
 
-Part of what I do is helping you figure out what you want/need, but it's good to have something sort of plan coming in. Technical proficiency is preferred–I think being able to edit your own website is a skill worth developing–but not necessary. 
+Part of what I do is helping you figure out what you want/need, but it's good to have some sort of plan coming in. Technical proficiency is preferred–I think being able to edit your own website is a skill worth developing–but not necessary. 
 
 <blockquote><a href="(https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/"> <p>To those creative people who say “I don’t need a website,” I ask: why not have a personal website that works strategically, in parallel to your other activities? How could a website complement what you already do rather than competing or repeating? How can you make it fun or thought-provoking or (insert desired feeling here) for you? How can the process of making and cultivating a website contribute to your approach? </p>
 <p> ...each artist should create their own space on the web, for a website is an individual act of collective ambition. </p>
@@ -24,6 +24,10 @@ I'm also open to other kinds of design work, including typography audits, creati
 ## the problem
 
 You want a really cool website. I'm assuming that's your primary goal. You want it to be nice to look at, great to read, make visitors whistle in appreciation, etc. etc. 
+
+But everything you've seen so far wasn't made for you/
+
+Maybe you've been avoiding updating anything on your site for a really long time because you just weren't happy with how it looked.
 
 If you want to get a bunch of words onto the internet as cheaply as possible, there's never been more ways to go about it. Most blogging platforms will cost you less than $5/month, Tumblr and Twitter are free. 
 
