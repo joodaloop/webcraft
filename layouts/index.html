@@ -21,6 +21,11 @@
               font-weight: 1 999;  
             }
 
+        :root{
+            --main: #222;
+            --second: #fff;
+        }
+
         html{
             scroll-behavior: smooth;
         }
@@ -29,8 +34,8 @@
             padding: 5rem 0%;
             font-family: Satoshi, system-ui;
             text-align: center;
-            background: #fff;
-            color: #444;
+            background: var(--second);
+            color: var(--main);
         }
 
         h1{
@@ -53,7 +58,7 @@
         }
 
         p{
-            margin: 1.5rem 0rem;
+            margin: 1.6rem 0rem;
         }
 
         table{
@@ -61,6 +66,22 @@
 /*            padding: 1rem 2rem;*/
             margin: 2.5rem auto;
         }
+
+        details{
+            border: solid 2px var(--main);
+            padding: 1rem;
+        }
+
+        summary:hover{
+            cursor: pointer;
+        }
+
+        summary{
+          font-weight: 900;
+          font-size: 1.2em;
+          font-variant: small-caps;
+        }
+
 
         td{
             padding: 8px 5rem 0px 0px;
@@ -107,9 +128,9 @@
         }
 
         main{
-            max-width: 39rem;
-            width: 90%;
-            line-height: 1.44em;
+            max-width: 38rem;
+            width: 94%;
+            line-height: 1.5em;
             display: inline-block;
             text-align: left;
             font-size: 17px;
@@ -138,7 +159,7 @@
             line-height: 1.5em;
             font-style: italic;
             margin-bottom: 1rem;
-            color: #666;
+            color: var(--main);
 
         }
 
@@ -157,12 +178,12 @@
             margin: 0px;
             margin-bottom: 10px;
             border-radius: 5px;
-            box-shadow: 0px 1px 5px #ddd;
+            box-shadow: 0px 1px 2px #888;
             box-sizing: border-box;
         }
 
         a{
-            color: inherit;
+            color: var(--main);
             text-decoration-thickness: 1.5px;
             text-underline-offset: 2px;
             text-decoration-style: dotted;
@@ -178,8 +199,21 @@
         }
 
         a:hover img, a:hover video{
-            box-shadow: 0px 0px 3px #bbb;
+            box-shadow: 0px 1px 5px #888;
 
+        }
+
+        button{
+            background: var(--second);
+            color: inherit;
+            border: solid 2px var(--main);
+            font-size: 1rem;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        button:hover{
+            opacity: 0.9;
         }
 
         em{
@@ -209,7 +243,7 @@
             font-size: 18px;
             line-height: 1.5em;
             margin: 3rem 3rem 3rem 3rem;
-            color: #444;
+            color: var(--main);
         }
 
         .subtitle a, blockquote a{
@@ -241,7 +275,7 @@
             font-weight: 200;
             display: block;
             margin: 0.4em 0rem;
-            color: #666;
+            color: var(--main);
         }
 
         .toc a:hover{
@@ -290,6 +324,66 @@
             td{
                 padding: 8px 3rem 0px 0px;
             }
+
+            /*.toc{
+                position: relative;
+                top: 0vh;
+                text-align: center;
+                left: 0rem;
+                display: block;
+                margin-bottom: 4rem;
+            }
+
+            .toc a{
+                font-weight: 600;
+                color: inherit;
+            }
+
+            .subtitle{
+                margin-bottom: 4rem;
+            }*/
+        }
+
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background-color: transparent;
+            pointer-events: none;
+        }
+
+        .boid {
+            width: 10px;
+            height: 3px;
+            background-color: var(--main);
+            position: absolute;
+            border-radius: 100%;
+        }
+
+        .raindrop {
+            width: 1px;
+            height: 25px;
+            background-color: var(--main);
+            position: absolute;
+            bottom: 100%;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+
+        .mode{
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            font-weight: 200;
+            border: none;
         }
 
     </style>
@@ -300,15 +394,24 @@
         <h1> webcraft</h1>
         <div class=subtitle> by <a href="https://joodaloop.com"> Judah </a></div>
 
-        {{ .Content }}
+        <div class="container" id=container>
+        </div>
+
+        <button class=mode onclick="switchColors()"> dark/light </button>
+
 
         <div class=toc>
-            <a href="#the-problem" id="toc-the-problem">The Problem</a>
             <a href="#the-portfolio" id="toc-the-portfolio">Portfolio</a>
+            <a href="#the-product" id="toc-the-product">The Product</a>
+            <a href="#the-problem" id="toc-the-problem">The Problem</a>
             <a href="#the-process" id="toc-the-process"> Process</a>
             <a href="#the-price" id="toc-the-price"> Price</a>
             <a href="#postscript" id="toc-postscript"> Postscript</a>
         </div>
+
+        {{ .Content }}
+
+        
 
     </main>
 <!-- 
@@ -340,6 +443,18 @@
  -->
 
     <script>
+
+        const root = document.documentElement;
+
+        function switchColors() {
+            const mainColor = getComputedStyle(root).getPropertyValue('--main');
+            const secondColor = getComputedStyle(root).getPropertyValue('--second');
+
+            root.style.setProperty('--main', secondColor);
+            root.style.setProperty('--second', mainColor);
+        }
+
+
 
         let prevID = "the-problem"
 
@@ -387,6 +502,204 @@
             
         })
 
+
+
+        let numBoids = 25;
+        let boids = [];
+        let animation = null
+
+        function activateBirds(){
+            boids = []; 
+
+            const currentBoids = document.querySelectorAll('.boid');
+
+            currentBoids.forEach(boid => {
+                boid.remove();
+            });
+
+            for (let i = 0; i < numBoids; i++) {
+                        const boid = document.createElement('div');
+                        boid.className = 'boid';
+                        document.querySelector('.container').appendChild(boid);
+
+                        boids.push({
+                            element: boid,
+                            x: Math.random() * window.innerWidth,
+                            y: Math.random() * window.innerHeight,
+                            vx: Math.random() * 2 - 1,
+                            vy: Math.random() * 2 - 1,
+                        });
+                    }
+            cancelAnimationFrame(animation)
+            updateBoids()
+        }
+
+
+
+        const numRaindrops = 250;
+        const rainContainer = document.querySelector('.container');
+        const startButton = document.getElementById('startButton');
+        const stopButton = document.getElementById('stopButton');
+        let animationIds = []; // Store animation IDs for each raindrop
+
+        function createRaindrop(delay) {
+            const raindrop = document.createElement('div');
+            raindrop.className = 'raindrop';
+            raindrop.style.left = `${Math.random() * 100}vw`;
+            rainContainer.appendChild(raindrop);
+
+            let startTime = null;
+            function animateRaindrop(timestamp) {
+                if (!startTime) startTime = timestamp;
+
+                const progress = (timestamp - startTime) / 1000; // Convert to seconds
+                const distance = progress * window.innerHeight; // Linear fall
+
+                raindrop.style.transform = `translateY(${distance}px)`;
+
+                if (distance < window.innerHeight) {
+                    animationIds[delay] = requestAnimationFrame(animateRaindrop);
+                } else {
+                    rainContainer.removeChild(raindrop);
+                    cancelAnimationFrame(animationIds[delay]);
+                }
+            }
+
+            setTimeout(() => {
+                animationIds[delay] = requestAnimationFrame(animateRaindrop);
+            }, delay);
+        }
+
+
+        function activateRain() {
+            let delay = 0;
+                for (let i = 0; i < numRaindrops; i++) {
+                    createRaindrop(delay);
+                    delay += Math.random() * 50; // Random delay up to 1 second
+                }
+        };
+
+        // stopButton.addEventListener('click', () => {
+        //     if (animationId !== null) {
+        //         cancelAnimationFrame(animationId);
+        //         animationId = null;
+        //         // Clear existing raindrops
+        //         rainContainer.innerHTML = '';
+        //     }
+        // });
+
+
+        // for (let i = 0; i < numBoids; i++) {
+        //     const boid = document.createElement('div');
+        //     boid.className = 'boid';
+        //     document.querySelector('.container').appendChild(boid);
+
+        //     boids.push({
+        //         element: boid,
+        //         x: Math.random() * window.innerWidth,
+        //         y: Math.random() * window.innerHeight,
+        //         vx: Math.random() * 2 - 1,
+        //         vy: Math.random() * 2 - 1,
+        //     });
+        // }
+
+        function updateBoids() {
+            const cohesionRadius = 250;
+            const alignmentRadius = 75;
+            const separationRadius = 20;
+            const maxSpeed = 6;
+
+            for (let i = 0; i < numBoids; i++) {
+                const boid = boids[i];
+
+                let centerX = 0;
+                let centerY = 0;
+                let cohesionCount = 0;
+                let alignmentX = 0;
+                let alignmentY = 0;
+                let alignmentCount = 0;
+                let separationX = 0;
+                let separationY = 0;
+
+                for (let j = 0; j < numBoids; j++) {
+                    if (i !== j) {
+                        const otherBoid = boids[j];
+                        const dx = otherBoid.x - boid.x;
+                        const dy = otherBoid.y - boid.y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+
+                        if (distance < cohesionRadius) {
+                            centerX += otherBoid.x;
+                            centerY += otherBoid.y;
+                            cohesionCount++;
+                        }
+
+                        if (distance < alignmentRadius) {
+                            alignmentX += otherBoid.vx;
+                            alignmentY += otherBoid.vy;
+                            alignmentCount++;
+                        }
+
+                        if (distance < separationRadius) {
+                            separationX -= dx;
+                            separationY -= dy;
+                        }
+                    }
+                }
+
+                if (cohesionCount > 0) {
+                    centerX /= cohesionCount;
+                    centerY /= cohesionCount;
+
+                    const cohesionForceX = (centerX - boid.x) * 0.005;
+                    const cohesionForceY = (centerY - boid.y) * 0.005 ;
+
+                    boid.vx += cohesionForceX;
+                    boid.vy += cohesionForceY;
+                }
+
+                if (alignmentCount > 0) {
+                    alignmentX /= alignmentCount;
+                    alignmentY /= alignmentCount;
+
+                    const alignmentForceX = alignmentX * 0.05;
+                    const alignmentForceY = alignmentY * 0.05;
+
+                    boid.vx += alignmentForceX;
+                    boid.vy += alignmentForceY;
+                }
+
+                if (separationX !== 0 || separationY !== 0) {
+                    const separationForceX = separationX * 0.1;
+                    const separationForceY = separationY * 0.1;
+
+                    boid.vx += separationForceX;
+                    boid.vy += separationForceY;
+                }
+
+                // Limit speed
+                const speed = Math.sqrt(boid.vx * boid.vx + boid.vy * boid.vy);
+                if (speed > maxSpeed) {
+                    boid.vx *= maxSpeed / speed;
+                    boid.vy *= maxSpeed / speed;
+                }
+
+                if (speed < 2) {
+                    const scaleFactor = 2 / speed;
+                    boid.vx *= scaleFactor;
+                    boid.vy *= scaleFactor;
+                }
+
+                // Update position
+                boid.x += boid.vx;
+                boid.y += boid.vy;
+
+                // Apply new position
+                boid.element.style.transform = `translate(${boid.x}px, ${boid.y}px)`;
+            }
+
+            animation = requestAnimationFrame(updateBoids);
+        }
 
 
     </script>
