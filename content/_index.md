@@ -9,15 +9,15 @@ The kind of website that gets [shared](https://twitter.com/freeshreeda/status/16
 
 If this is the sort of thing you're interested in creating, you can hire me. Let me know on [Twitter](https://twitter.com/joodalooped) or email (judah@joodaloop.com). 
 
+**I'm also open to other kinds of design work**, including mini-sites and other web projects with special requirements (web books, community sites, etc). You’re welcome to reach out and see what else we can work on together–custom, human-scale sites are what I'm good at.
+
 Chances are, you're coming to this page having seen [my work](#the-portfolio) before, and with a particular project in mind. In which case, you could skip straight to the [Process](#the-process) section to read about what working with me is like. 
 
 I enjoy working with people who want to build a real home for themselves on the web; more than just the standard blog. It also helps if you have a variety of content to work with. Layout ideas, sketches, and assorted blueprints are more than welcome as inputs to the process.
 
 Part of what I do is helping you figure out what you want/need, but it's good to have some sort of plan coming in. Technical proficiency is preferred–I think being able to edit your own website is a skill worth developing–but not necessary. 
 
-**I'm also open to other kinds of design work**, including mini-sites and web projects with special requirements (web books, community sites, etc). You’re welcome to reach out and see what else we can work on together, but custom, human-scale sites is what I’m best at.
-
-<!-- I'm good at this because I spend unreasonable amounts of time thinking, looking at, and putting together websites for *people*. I've written about my <a href="">understanding of typography</a>, the <a href="">possibility space of personal websites</a>, the <a href="">details of HTML</a> itself, what it takes to <a href="">make a good site</a>, and all the <a href="">Sites I Want To Make</a>. Yeah, I take this more seriously than I should, but we all have our indulgences. -->
+<!-- I'm good at this because I spend unreasonable amounts of time thinking, looking at, and putting together websites for *people*. I've written about my <a href="https://type.joodaloop.com">understanding of typography</a>, the <a href="https://joodaloop.com/add-to-a-site">possibility space of personal websites</a>, the <a href="https://html.joodaloop.com">details of HTML</a> itself, what it takes to <a href="https://joodaloop.com/what-it-takes">make a good site</a>, and all the <a href="https://sites.joodaloop.com">Sites I Want To Make</a>. Yeah, I take this more seriously than I should, but we all have our indulgences. -->
 
 <blockquote><a href="(https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/"> <p>To those creative people who say “I don’t need a website,” I ask: why not have a personal website that works strategically, in parallel to your other activities? How could a website complement what you already do rather than competing or repeating? How can you make it fun or thought-provoking or (insert desired feeling here) for you? How can the process of making and cultivating a website contribute to your approach? </p>
 <p> ...each artist should create their own space on the web, for a website is an individual act of collective ambition. </p>
@@ -74,7 +74,6 @@ Part of what I do is helping you figure out what you want/need, but it's good to
 
 
 
-
 ## the product
 
 You want a really cool website. I'm assuming that's your primary goal. You want it to be nice to look at, great to read, make visitors whistle in appreciation, etc. etc. 
@@ -111,8 +110,10 @@ There's no way you could get something that cool built. You can't afford to go t
 
 <details> 
     <summary> a brief rant on the state of the modern web </summary>
-    <p>The web is full of mediocre websites.* The most popular kind of templates out there are tired variations of the same landing page, Linktree profiles, and blog themes. There's nothing *wrong* with these templates, they're useful, always in demand, and often provided for free. </p>
-    <p> [placeholder text] </p>
+    <p>The web is full of mediocre websites. The most popular kind of templates out there are tired variations of the same landing page, Linktree profiles, and blog themes. There's nothing *wrong* with these templates, they're useful, always in demand, and often provided for free. </p>
+    <p> And lots of people don't care about this Medium-ification of the web, the homogeneity of fonts and color schemes and home pages. They "get the job done", so to speak. Some people drink the crystal chalice Kool-Aid.</p>
+    <p> But I (and maybe you, too) believe that default form of the modern webpage–a single column of text–is largely a relic of the typewriter era, and a failure of imagination. You can tell when someone's made something for themselves, and when it's just another general-use theme thrown onto the growing pile. </p>
+    <p> To want more from a website is something of a pretentious act. It's not very rational to work on bespoke layouts. To care that even the simplest of black/white pages have a bit of soul to them. It's not exactly logical; but it is understandable. Because once you've glimpsed the possibilities of the web, it's hard to go back to cookie-cutter templates. </p>
 </details>
 
 There goes your hopes of having a site that matched the vibe of your project/personality/community. You've almost resigned to making do with yet another free template, or some kind of variation of a paid one. 
