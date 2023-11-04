@@ -22,7 +22,7 @@
             }
 
         :root{
-            --main: #222;
+            --main: #191919;
             --second: #fff;
         }
 
@@ -36,6 +36,99 @@
             text-align: center;
             background: var(--second);
             color: var(--main);
+        }
+
+        .rain, .rain.back-row  {
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100vw;
+          height: 100vh;
+          z-index: 2;
+          pointer-events: none;
+        }
+
+        .rain.back-row {
+          z-index: 1;
+          opacity: 0.7;
+        }
+
+        .drop {
+          position: absolute;
+          bottom: 100%;
+          width: 15px;
+          height: 120px;
+          pointer-events: none;
+          animation: drop 5s linear infinite;
+          opacity: 0.5;
+        }
+
+        @keyframes drop {
+          0% {
+            transform: translateY(0vh);
+          }
+          75% {
+            transform: translateY(112vh);
+          }
+          100% {
+            transform: translateY(112vh);
+          }
+        }
+
+        .stem {
+          width: 1px;
+          height: 60%;
+          margin-left: 7px;
+          background: linear-gradient(to bottom, var(--second), var(--main));
+          animation: stem 5s linear infinite;
+        }
+
+        @keyframes stem {
+          0% {
+            opacity: 1;
+          }
+          65% {
+            opacity: 1;
+          }
+          75% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+
+        .splat {
+          width: 20px;
+          height: 15px;
+          border-top: 2px dotted var(--main);
+          border-radius: 50%;
+          opacity: 1;
+          transform: scale(0);
+          animation: splat 5s linear infinite;
+        }
+
+        body.splat-toggle .splat {
+          display: block;
+        }
+
+        @keyframes splat {
+          0% {
+            opacity: 1;
+            transform: scale(0);
+          }
+          80% {
+            opacity: 1;
+            transform: scale(0);
+          }
+          90% {
+            opacity: 0.5;
+            transform: scale(1);
+          }
+          100% {
+            opacity: 0.2;
+            transform: scale(1.5);
+          }
         }
 
         h1{
@@ -151,7 +244,7 @@
             display: inline-block;
             line-height: 0px;
             box-sizing: border-box;
-            border-radius: 5px;
+            border-radius: 3px;
         }
 
         figcaption{
@@ -177,9 +270,10 @@
             height: auto;
             margin: 0px;
             margin-bottom: 10px;
-            border-radius: 5px;
+            border-radius: 3px;
             box-shadow: 0px 1px 2px #888;
             box-sizing: border-box;
+            transition: 0.15s ease all;
         }
 
         a{
@@ -199,8 +293,8 @@
         }
 
         a:hover img, a:hover video{
-            box-shadow: 0px 1px 5px #888;
-
+            box-shadow: 0px 1px 5px #999;
+            transform: scale(1.014);
         }
 
         button{
@@ -389,7 +483,9 @@
     </style>
 </head>
 
-<body>
+<body class="back-row-toggle splat-toggle">
+  <div class="rain front-row"></div>
+  <div class="rain back-row"></div>
     <main>
         <h1> webcraft</h1>
         <div class=subtitle> by <a href="https://joodaloop.com"> Judah </a></div>
@@ -401,9 +497,8 @@
 
 
         <div class=toc>
-            <a href="#the-portfolio" id="toc-the-portfolio">Portfolio</a>
             <a href="#the-product" id="toc-the-product">The Product</a>
-            <a href="#the-problem" id="toc-the-problem">The Problem</a>
+            <a href="#the-portfolio" id="toc-the-portfolio">Portfolio</a>
             <a href="#the-process" id="toc-the-process"> Process</a>
             <a href="#the-price" id="toc-the-price"> Price</a>
             <a href="#postscript" id="toc-postscript"> Postscript</a>
@@ -484,7 +579,6 @@
 
         // Call the function and retrieve the current heading ID
         const currentId = getCurrentHeadingId();
-        console.log(currentId);
 
         document.addEventListener("scroll", () => {
 
@@ -495,7 +589,6 @@
             
             for(let ele of headings){
                 document.getElementById("toc-" + ele.id).style.fontWeight = "200"
-                console.log(ele)
             }
 
                 document.getElementById("toc-" + current).style.fontWeight = "800"
@@ -542,42 +635,105 @@
         const stopButton = document.getElementById('stopButton');
         let animationIds = []; // Store animation IDs for each raindrop
 
-        function createRaindrop(delay) {
-            const raindrop = document.createElement('div');
-            raindrop.className = 'raindrop';
-            raindrop.style.left = `${Math.random() * 100}vw`;
-            rainContainer.appendChild(raindrop);
+        // function createRaindrop(delay) {
+        //     const raindrop = document.createElement('div');
+        //     raindrop.className = 'raindrop';
+        //     raindrop.style.left = `${Math.random() * 100}vw`;
+        //     rainContainer.appendChild(raindrop);
 
-            let startTime = null;
-            function animateRaindrop(timestamp) {
-                if (!startTime) startTime = timestamp;
+        //     let startTime = null;
+        //     function animateRaindrop(timestamp) {
+        //         if (!startTime) startTime = timestamp;
 
-                const progress = (timestamp - startTime) / 1000; // Convert to seconds
-                const distance = progress * window.innerHeight; // Linear fall
+        //         const progress = (timestamp - startTime) / 1000; // Convert to seconds
+        //         const distance = progress * window.innerHeight; // Linear fall
 
-                raindrop.style.transform = `translateY(${distance}px)`;
+        //         raindrop.style.transform = `translateY(${distance}px)`;
 
-                if (distance < window.innerHeight) {
-                    animationIds[delay] = requestAnimationFrame(animateRaindrop);
-                } else {
-                    rainContainer.removeChild(raindrop);
-                    cancelAnimationFrame(animationIds[delay]);
-                }
-            }
+        //         if (distance < window.innerHeight) {
+        //             animationIds[delay] = requestAnimationFrame(animateRaindrop);
+        //         } else {
+        //             rainContainer.removeChild(raindrop);
+        //             cancelAnimationFrame(animationIds[delay]);
+        //         }
+        //     }
 
-            setTimeout(() => {
-                animationIds[delay] = requestAnimationFrame(animateRaindrop);
-            }, delay);
-        }
+        //     setTimeout(() => {
+        //         animationIds[delay] = requestAnimationFrame(animateRaindrop);
+        //     }, delay);
+        // }
 
+
+        // function activateRain() {
+        //     let delay = 0;
+        //         for (let i = 0; i < numRaindrops; i++) {
+        //             createRaindrop(delay);
+        //             delay += Math.random() * 50; // Random delay up to 1 second
+        //         }
+        // };
 
         function activateRain() {
-            let delay = 0;
-                for (let i = 0; i < numRaindrops; i++) {
-                    createRaindrop(delay);
-                    delay += Math.random() * 50; // Random delay up to 1 second
-                }
+          // Clear out everything
+          document.querySelector('.rain.front-row').innerHTML = '';
+          document.querySelector('.rain.back-row').innerHTML = '';
+
+
+          var increment = 0;
+          var drops = '';
+          var backDrops = '';
+
+          while (increment < 150) {
+            // Couple random numbers to use for various randomizations
+            var randoHundo = Math.floor(Math.random() * (98 - 1 + 1) + 1); // Random number between 98 and 1
+            var randoFiver = Math.floor(Math.random() * (5 - 2 + 1) + 2); // Random number between 5 and 2
+            increment += randoFiver; // Increment
+            // Add in a new raindrop with various randomizations to certain CSS properties
+            drops +=
+              '<div class="drop" style="left: ' +
+              increment +
+              '%; bottom: ' +
+              (randoFiver + randoFiver - 1 + 100) +
+              '%; animation-delay: 0.' +
+              randoHundo +
+              's; animation-duration: 0.8' +
+              randoHundo +
+              's;"><div class="stem" style="animation-delay: 0.' +
+              randoHundo +
+              's; animation-duration: 0.8' +
+              randoHundo +
+              's;"></div><div class="splat" style="animation-delay: 0.' +
+              randoHundo +
+              's; animation-duration: 0.8' +
+              randoHundo +
+              's;"></div></div>';
+            backDrops +=
+              '<div class="drop" style="right: ' +
+              increment +
+              '%; bottom: ' +
+              (randoFiver + randoFiver - 1 + 100) +
+              '%; animation-delay: 0.' +
+              randoHundo +
+              's; animation-duration: 0.8' +
+              randoHundo +
+              's;"><div class="stem" style="animation-delay: 0.' +
+              randoHundo +
+              's; animation-duration: 0.8' +
+              randoHundo +
+              's;"></div><div class="splat" style="animation-delay: 0.' +
+              randoHundo +
+              's; animation-duration: 0.8' +
+              randoHundo +
+              's;"></div></div>';
+          }
+
+          document.querySelector('.rain.front-row').innerHTML = drops;
+          document.querySelector('.rain.back-row').innerHTML = backDrops;
+         
+          setTimeout(() =>  {document.querySelector('.rain.front-row').innerHTML = '';
+          document.querySelector('.rain.back-row').innerHTML = ''}, 7000)
         };
+        
+
 
         // stopButton.addEventListener('click', () => {
         //     if (animationId !== null) {
@@ -608,6 +764,7 @@
             const alignmentRadius = 75;
             const separationRadius = 20;
             const maxSpeed = 6;
+            document.querySelector('.rain').innerHTML = '';
 
             for (let i = 0; i < numBoids; i++) {
                 const boid = boids[i];
