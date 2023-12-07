@@ -28,11 +28,13 @@ Chances are, you're coming to this page having seen [my work](#the-portfolio) be
 
 ## the product
 
+<blockquote style="margin: 3rem 1.5rem; text-align: center;"><a href="https://x.com/poetofgrindset/status/1732090158487568893"> The best compliment for any piece of creation is often a single earnest “wow”.</a> </blockquote>
+
 You want a really cool website. I'm assuming that's your primary goal. You want it to be nice to look at, great to read, make visitors whistle in appreciation, etc. etc. You want a site that is custom-built to match match the vibe of your project/personality/community. 
 
-I work with people to get a sense of their aesthetic and preferences, and then design sites that they wouldn't be able to dream up on their own. I've worked with descriptions like "Whole Earth Catalogue", "[LaTeX paper](https://twitter.com/joodaloop/status/1654565087439380480)" and "teenage engineering", and produced some of my best sites. 
+I work with people to get a sense of their aesthetic and preferences, and then design sites that they wouldn't be able to dream up on their own. I've worked with descriptions like "Whole Earth Catalogue", "LaTeX paper" and "teenage engineering", and produced some of my best sites. 
 
-<!-- *I believe this is a repeatable process.* Your website can be as good as the best in the world. -->
+<!-- *I believe this is a repeatable process.* Your website can be as good as the best in the world. https://twitter.com/joodaloop/status/1654565087439380480)-->
 
 The most fun part of this process is when people start to see *what's really possible* outside of the current meta of standard blog themes. How you can have sidenotes and bookshelves and media hoards and cool new navigation patterns. What it feels like to design something in your image.
 
@@ -83,10 +85,10 @@ They’ve been designing, writing code, and thinking about websites for years, d
                 <a href="https://pradyu.netlify.app"> <img src=/media/pradyu-1.jpg> </a>
                 <figcaption> "LaTeX, dense, structure, research paper, type, detailed." </figcaption>
             </figure>
-            <figure class=broad>
+            <!-- <figure class=broad>
                 <a href="https://measureformeasure.co"> <img src=/media/mfm.png> </a>
                 <figcaption> <b>Measure for Measure</b>, a blog about science history." </figcaption>
-            </figure>
+            </figure> -->
             <!-- <figure class=broad>
                 <a href="https://streams.place"> 
                     <video autoplay muted loop=infinite>
@@ -108,12 +110,12 @@ They’ve been designing, writing code, and thinking about websites for years, d
                 <figcaption> Current design for my personal site. </figcaption>
             </figure>
             <figure class=broad>
-               <a href="https://gapat.netlify.app"> <img src=/media/gapat-1.jpg> </a>
-                <figcaption> Super-minimal theme for Ashish. </figcaption>
-            </figure>
-            <figure class=broad>
                <a href="https://shreedasegan.com"> <img src=/media/shreeda-2.jpg> </a>
                 <figcaption class=last> Bookshelf for Shreeda's site. </figcaption>
+            </figure>
+            <figure class=broad>
+               <a href="https://gapat.netlify.app"> <img src=/media/gapat-1.jpg> </a>
+                <figcaption> Super-minimal theme for Ashish. </figcaption>
             </figure>
         </div>  
 
@@ -225,6 +227,10 @@ I want to make beautiful websites. I want to make messy websites. I want to make
 </blockquote>
 
 **Things I care about:** Typography, delightful minimalism, semantic HTML, information architecture, performance, progressive enhancement, silly details. 
+
+<blockquote>
+    <a href="https://streams.place/a_bhiman/drops/145963296710867"><p>There are these sites which look like absolute works of art on a first glance, but they tire your senses and overwhelm your brain with too many animations. <b>These sites are unusable on a day to day basis.</b><p>Then there are sites which look delightful but also make you want to revisit them again and again. Most (probably all?) of the time they are delightfully minimalistic.</p></a>
+</blockquote>
 
 <!-- 
 
