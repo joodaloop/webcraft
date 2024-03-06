@@ -5,9 +5,9 @@ description: "Designing the best personal websites on the internet."
 
 **I design and develop the best personal websites money can buy.**
 
-The kind of website that gets [shared](https://twitter.com/freeshreeda/status/1668389564799504386) and talked about just for how cool it looks. If this is the sort of thing you're interested in creating, you can hire me. Let me know on [Twitter](https://twitter.com/joodalooped) or email (judah@joodaloop.com). 
+The kind of website that [gets](https://twitter.com/Nexuist/status/1709682570584100902) [shared](https://twitter.com/freeshreeda/status/1668389564799504386) and [talked]((https://twitter.com/ctjlewis/status/1765236779576340951)) [about](https://twitter.com/krishnanrohit/status/1716325944326021391) just for how cool it looks. If this is the sort of thing you're interested in creating, you can hire me. Let me know on [Twitter](https://twitter.com/joodalooped) or email (judah@joodaloop.com). 
 
-**I'm also open to other kinds of design work**, including mini-sites and other web projects with special requirements (web books, community sites, etc). You’re welcome to reach out and see what else we can work on together–custom, *human-scale sites* are what I'm good at.
+**I'm also open to other kinds of design work**, especially stuff that invovles lots of text, including mini-sites and other web projects with special requirements (web books, community sites, etc). You’re welcome to reach out and see what else we can work on together–custom, *human-scale sites* are what I'm good at.
 
 <blockquote><a href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/"> <p>To those creative people who say “I don’t need a website,” I ask: why not have a personal website that works strategically, in parallel to your other activities? How could a website complement what you already do rather than competing or repeating? How can you make it fun or thought-provoking or (insert desired feeling here) for you? How can the process of making and cultivating a website contribute to your approach? </p>
 <p> ...each artist should create their own space on the web, for a website is an individual act of collective ambition. </p>
@@ -19,6 +19,7 @@ Chances are, you're coming to this page having seen [my work](#the-portfolio) be
     <summary>you should probably not hire me if...</summary>
     <p> Your project requires a bunch of custom animations, sleek gradients or complicated transitions. </p>
     <p> If you want a landing page that works like <a href="https://www.dagusa.com/">every other landing page</a> out there. Please just buy one of the hundreds of templates, lots of them are free too.</p>
+    <p> If you want a site that <a href="https://alvarotrigo.com/blog/what-is-scroll-hijacking/">scrolljacks</a> it's readers. </p>
     <p>  If you're trying to make something "really fancy", instead of an atypical, purposeful, content-first site. </p>
     <p>  If you have no idea what you want apart from "a website", and aren't willing to spend time thinking about it. <b>A personal website is <i>your</i> website</b>, I can't conjure one out of thin air. I will help you figure things out, but please come in with concrete desires and preferences.</p>
 </details>
@@ -51,9 +52,9 @@ This is your website, you can choose what parts of you to show off, and how to d
 
 **You don't want to fit yourself into a pre-existing theme.**
 
-They're often pretty lame. Let the Writers<sup>TM</sup> have their Substacks, you don't have to be tied to their bland UI if you'd rather have something better. 
+They're often pretty lame. Let the Writers<sup>TM</sup> have their Substacks, let other startups have yet another version of the same landing page. You don't have to be tied to bland UIs if you'd rather have something better. 
 
-You can play around with format, presentation, and arrangement. Your home page can be a list of [select sentences](https://www.robinrendle.com/) from each post on your site. If long blog posts aren't your thing, you can have your site be a [Stream](https://streams.place). Things get way more interesting once you can control the smallest of details.
+You can play around with format, presentation, and arrangement. Your home page can be a list of [select sentences](https://web.archive.org/web/20230326061757/https://www.robinrendle.com/) from each post on your site. If long blog posts aren't your thing, you can have your site be a [Stream](https://streams.place). Things get way more interesting once you can control the smallest of details.
 
 **You want to do something fun on the web.**
 
@@ -106,7 +107,7 @@ They’ve been designing, writing code, and thinking about websites for years, d
                 <figcaption> v1 of my personal site, had snowflakes, three columns, and a hidden dark mode feature. </figcaption>
             </figure> -->
             <figure class=broad>
-                <a href="https://joodaloop.com"> <img src=/media/joodaloop-2.jpg> </a>
+                <a href="https://joodaloop.com"> <img src=/media/joodaloop.png> </a>
                 <figcaption> Current design for my personal site. </figcaption>
             </figure>
             <figure class=broad>
@@ -149,11 +150,11 @@ Cost: *Around 2 hours of your time.*
 
 **Step II:** I go away for a few days to think things over, asking you a few questions while I do it. Then I come back with three (or more) rough, distinct design directions you can choose from. These will probably include layout sketches, and a list of feature ideas. 
 
-Cost: *$250*
+Cost: *$350*
 
 **Step III:** If you're sufficiently excited by the ideas I put forward, we finalise the key design choices and features and I go build the whole thing on the platform you prefer. This usually takes a week if I'm not too busy.
 
-Cost: *Variable, see the [Price](#the-price) section for details.*
+Cost: *Custom quote*
 
 <br>
 
@@ -161,9 +162,15 @@ Cost: *Variable, see the [Price](#the-price) section for details.*
 
 <br>
 
-**Step I** is important for me to get a feel for the kind of site what you want, and how confident I am that I can, in fact, build you something nice. **Step II** costs a flat fee ($250) and, in the worst case, leaves you with the best 3 high-level ideas I could think of. 
+**Step I** is important for me to get a feel for the kind of site what you want, and how confident I am that I can, in fact, build you something nice. **Step II** costs a flat fee ($350) and, in the worst case, leaves you with the best 3 high-level ideas I could think of. 
 
-Once you pick a direction, decide on what features to include, and what platform you want the site to be hosted on, I can start with **Step III**. Pricing for this step is a fixed quote that I give you based on the factors mentioned in the [next section](#the-price). 
+Once you pick a direction, decide on what features to include, and what platform you want the site to be hosted on, I can start with **Step III**. Pricing for this step is determind by...
+
+**a) The level of complexity**. If you want a polished-but-minimal theme, you pay less than what you would for a really detailed site involving careful layouts and intricate details. 
+
+<!-- As an example, [joodaloop.com](https://joodaloop.com) would cost around ~$1500, while [shreedasegan.com](https://shreedasegan.com) would be worth over $2500. -->
+
+**b) Urgency.** If you have a tight deadline, I'm willing to prioritise your project over any ones that are in progress, but it will cost you 10-20% more to skip the line. 
 
 When the development of the site/theme is complete, I will help you set it up. If you need further modifications, or in-depth assistance, those services will be billed at $50/hour.  **Legitimate bug fixes, however, are completely free**. I care about fixing mistakes and inconsistencies as much as you do. 
 
@@ -176,23 +183,16 @@ Part of what I do is helping you figure out what you want/need, but it's good to
 I enjoy working with people who want to build a real home for themselves on the web; more than just the standard blog. It also helps if you have a variety of content to work with. Layout ideas, sketches, and assorted blueprints are more than welcome as inputs to the process.
  -->
 
-## the price
-
-The primary determinant of total costs will be the level of complexity involved. If you want a polished-but-minimal theme, you pay less than what you would for a really detailed site involving careful layouts and intricate details. As an example, [joodaloop.com](https://joodaloop.com) would cost around ~$1500, while [shreedasegan.com](https://shreedasegan.com) would be worth over $2500.
-
+<!-- 
 The second big factor is the platform you want the site to be built for. I have baselines for each platform that reflect the ease-of-development for each of them:
 
 | Platform | Base price |
 |-|-|
 | Single-page site | $500+ |
 | Static site (Hugo, Eleventy) | $1000+ |
-| Ghost/Wordpress | $2000+ |
+| Ghost/Wordpress | $2000+ | -->
 
 <!-- These are only base prices, it's still possible for say, a static site with high complexity to cost as much as a simpler Wordpress site. For example, [Anton's Hugo site](https://anton.netlify.app) cost much less (~$2000) than it would have if he had wanted a Wordpress theme (upwards of $3000). -->
-
-Finally, the level of urgency might affect the price too. If you have a tight deadline, I'm willing to prioritise your project over any ones that are in progress, but it will cost you 10-20% more to skip the line. 
-
-**Summary:** Fixed price for **step II** ($250), custom quote for **step III**, large future changes and maintenance at $50/hour. Bug fixes and set-up assistance for free.
 
 <!-- 
 At the moment, there are some things that I do really well, which makes me suited to particular kinds of design work. Here’s a quick summary of the main skills.
