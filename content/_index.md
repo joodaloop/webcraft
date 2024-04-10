@@ -82,6 +82,10 @@ They’ve been designing, writing code, and thinking about websites for years, d
                 <a href="https://nickarner.com"> <img src=/media/narner.png> </a>
                 <figcaption> Super-minimal personal site for <b>Nick Arner</b>. </figcaption>
             </figure>
+            <!-- <figure class=broad>
+               <a href="https://jihad.house"> <img src=/media/jihad-book.png> </a>
+                <figcaption> Super-minimal theme for Ashish. </figcaption>
+            </figure> -->
             <figure class=broad>
                 <a href="https://pradyu.netlify.app"> <img src=/media/pradyu-1.jpg> </a>
                 <figcaption> "LaTeX, dense, structure, research paper, type, detailed." </figcaption>
